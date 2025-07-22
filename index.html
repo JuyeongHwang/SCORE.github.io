@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Does a Virtual Agent Decide Where to Look? - Symbolic Cognitive Reasoning for Embodied Head Rotation</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+
+<!-- Title Section -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">How Does a Virtual Agent Decide Where to Look?</h1>
+          <h2 class="subtitle is-4">Symbolic Cognitive Reasoning for Embodied Head Rotation</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser Image and Caption -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <figure class="image is-16by9">
+        <img src="static/images/AI_Champion.png" alt="Teaser Image">
+      </figure>
+      <h2 class="subtitle has-text-centered">
+        "Our system infers not only where each avatar should look, but also why. In this outdoor–indoor scene, embodied agents decide where to look based on five symbolic motivational drivers — for example, checking oncoming traffic, reading a map, or searching for vacant seats. Insets show the first-person view captured at each head orientation, together with the agent’s internal rationale produced by SCORE’s vision–language reasoning pipeline."
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Natural head rotation is critical for believable embodied virtual agents, yet this micro-level behavior remains largely underexplored. While head rotation prediction algorithms could, in principle, reproduce this behavior, they typically focus on visually salient stimuli and overlook the cognitive motives that guide head rotation. This yields agents that look at conspicuous objects while overlooking obstacles or task-relevant cues, diminishing realism in a virtual environment.
+          </p>
+          <p>
+            We introduce SCORE, a Symbolic COgnitive Reasoning framework for Embodied Head Rotation, a data-agnostic framework that produces context-aware head movements without task-specific training or hand-tuned heuristics. A controlled VR study (𝑁 = 20) identifies five motivational drivers of human head movements: Interest, Information Seeking, Safety, Social Schema, and Habit. SCORE encodes these drivers as symbolic predicates, perceives the scene with a Vision–Language Model (VLM), and plans head poses with a Large Language Model (LLM).
+          </p>
+          <p>
+            The framework employs a hybrid workflow: the VLM–LLM reasoning is executed offline, after which a lightweight FastVLM performs online validation to suppress hallucinations while maintaining responsiveness to scene dynamics. The result is an agent that predicts not only where to look but also why, generalizing to unseen scenes and multi-agent crowds while retaining behavioral plausibility.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
