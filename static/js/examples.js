@@ -71,7 +71,7 @@
           var n = m.steps.filter(function (s) { return s.res && s.res !== 'keep'; }).length;
           return { label: m.scene + ' · ' + m.agent, meta: m.steps.length + ' planned actions, ' + n + ' changed by RES.', steps: m.steps };
         }) },
-        { title: 'Released code · local Qwen', items: planItems }
+        { title: 'Released code', items: planItems }
       ]);
     });
   });
