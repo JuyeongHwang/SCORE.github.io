@@ -37,7 +37,7 @@ then copy `Build/WebGL/Build/*` to `static/webgl/Build/`. The page drives the bu
 
 ## Adding a time-stamped plan from the released code
 
-Run a scene with the Unity code (e.g. `SCORE_PROVIDER=ollama`), copy
+Run a scene with the Unity code, copy
 `Assets/SCOREResult/<name>_plan.json` to `static/data/plans/`, add a `"scene"` and `"model"` field,
 and list the file name in `static/data/plans/index.json`.
 
