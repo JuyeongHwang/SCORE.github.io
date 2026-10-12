@@ -10,7 +10,6 @@ static/js/results.js        DTW tables (paper numbers)
 static/js/replay.js         2D top-down replay, yaw chart, Unity WebGL bridge
 static/js/headrot.js        supplementary Figs. 7-11 + interactive unit-sphere view
 static/js/examples.js       action-reason traces (examples.json, plans/*.json)
-static/js/ollama-demo.js    SCORE prompts against the visitor's own Ollama server
 static/data/scenes/*.json   replay data (built by tools/build_replay_data.py)
 static/data/examples.json   logged action-reason pairs from SCORE runs
 static/videos/              supplementary video

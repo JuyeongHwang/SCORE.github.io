@@ -11,7 +11,7 @@
   <link rel="icon" href="static/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/score.css?v=6">
+  <link rel="stylesheet" href="static/css/score.css?v=7">
 </head>
 <body>
 
@@ -25,7 +25,6 @@
     <a class="nav" href="#replay">Interactive Replay</a>
     <a class="nav" href="#headrot">Trajectories</a>
     <a class="nav" href="#outputs">Model Outputs</a>
-    <a class="nav" href="#ollama">Run Locally</a>
     <a class="nav" href="#results">Results</a>
     <a class="nav" href="#bibtex">BibTeX</a>
     <span class="spacer"></span>
@@ -52,7 +51,6 @@
     <a class="btn ghost" href="https://github.com/JuyeongHwang/SIGGRAPHAsia2025OfficialCode_SCORE" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>Code</a>
     <a class="btn ghost" href="#replay">Interactive Replay</a>
-    <a class="btn ghost" href="#ollama">Run with Qwen (Ollama)</a>
   </div>
   <figure class="teaser">
     <img src="static/images/paper/SCORE_Teaser05.jpg" alt="SCORE agents in a city scene, each annotated with an action, its field of view and the reason for looking there">
@@ -262,48 +260,6 @@
   </div>
 </section>
 
-<section id="ollama">
-  <div class="wrap">
-    <div class="eyebrow">Run locally</div>
-    <h2>Try the SCORE reasoning step with Qwen on your own machine</h2>
-    <p>This page cannot run the full simulation, but it can send the exact SCORE prompts to an <a href="https://ollama.com" target="_blank" rel="noopener">Ollama</a> server running on <b>your</b> computer. Your browser talks to <code>localhost</code> directly; nothing is sent to us. The <a href="https://github.com/JuyeongHwang/SIGGRAPHAsia2025OfficialCode_SCORE" target="_blank" rel="noopener">released Unity code</a> has the same switch (<code>provider = Ollama</code> or <code>SCORE_PROVIDER=ollama</code>).</p>
-    <details open>
-      <summary>Setup (once)</summary>
-      <p style="margin-top:10px">1. Install Ollama and pull a vision-language model (≈ 6 GB):</p>
-      <pre><code>ollama pull qwen3-vl:8b</code></pre>
-      <p style="margin-top:10px">2. Allow this page to call your local server, then start it. macOS / Linux:</p>
-      <pre><code id="origins-sh">OLLAMA_ORIGINS="https://juyeonghwang.github.io" ollama serve</code></pre>
-      <p style="margin-top:10px">Windows (PowerShell). The Ollama tray app already runs a server on port 11434, so set the variable and restart the app instead of running <code>ollama serve</code>:</p>
-      <pre><code id="origins-ps">[Environment]::SetEnvironmentVariable("OLLAMA_ORIGINS", "https://juyeonghwang.github.io", "User")
-Stop-Process -Name "ollama app","ollama" -Force; Start-Process "$env:LOCALAPPDATA\Programs\Ollama\ollama app.exe"</code></pre>
-      <p class="muted" style="margin-top:6px">If you see <code>bind: Only one usage of each socket address</code>, a server is already running: restart it with the variable set as above.</p>
-      <p class="muted" style="margin-top:10px">Works in Chrome, Edge and Firefox. Chrome may ask for permission to access devices on your local network; allow it. Safari blocks requests from https pages to localhost.</p>
-    </details>
-
-    <div class="demo">
-      <div class="box">
-        <div class="field">
-          <span>Server</span>
-          <div style="display:flex;gap:8px"><input type="text" id="ol-url" value="http://localhost:11434"><button class="btn ghost" id="ol-check" style="flex:none">Connect</button></div>
-        </div>
-        <div class="field"><span>Model</span><select id="ol-model"><option>qwen3-vl:8b</option></select></div>
-        <div class="field"><span>Field of view (agent camera)</span><div class="fov-pick" id="fov-pick"></div></div>
-        <div class="field"><span>Scenario goal</span><input type="text" id="ol-goal"></div>
-        <div class="field"><span>Visible entities (illustrative list; in the simulator this comes from ray casting)</span><textarea id="ol-objects"></textarea></div>
-        <div class="field"><span>Current memory (FMM)</span><textarea id="ol-memory" placeholder="(empty at the first decision)"></textarea></div>
-        <div class="field"><span>Head offset from body (pitch, yaw °)</span><input type="text" id="ol-pose" value="0, 0"></div>
-        <button class="btn" id="ol-run">Run VLM → LLM</button>
-        <div class="status" id="ol-status">Not connected.</div>
-      </div>
-      <div class="box">
-        <label class="h" style="font-size:0.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)">Output</label>
-        <div id="ol-out"><p class="muted">Run the demo to see the perception memory, the driver allocation, the explanation and the chosen head action.</p></div>
-        <details style="margin-top:16px"><summary>Show prompts</summary><pre id="ol-prompts" style="white-space:pre-wrap;margin-top:10px;max-height:340px"></pre></details>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="results">
   <div class="wrap">
     <div class="eyebrow">Results</div>
@@ -358,11 +314,10 @@ Stop-Process -Name "ollama app","ollama" -Force; Start-Process "$env:LOCALAPPDAT
   </div>
 </footer>
 
-<script src="static/js/results.js?v=6"></script>
-<script src="static/js/replay.js?v=6"></script>
-<script src="static/js/headrot.js?v=6"></script>
-<script src="static/js/examples.js?v=6"></script>
-<script src="static/js/ollama-demo.js?v=6"></script>
+<script src="static/js/results.js?v=7"></script>
+<script src="static/js/replay.js?v=7"></script>
+<script src="static/js/headrot.js?v=7"></script>
+<script src="static/js/examples.js?v=7"></script>
 <script>
   (function () {
     var btn = document.getElementById('theme-btn');
