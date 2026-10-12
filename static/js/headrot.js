@@ -12,7 +12,7 @@
 
   // tabs + static figure
   $('hr-env').innerHTML = ENVS.map(function (e) {
-    return '<button class="tab' + (e[0] === st.env ? ' on' : '') + '" data-env="' + e[0] + '">' + LABEL[e[0]] + '</button>';
+    return '<button role="tab" class="' + (e[0] === st.env ? 'on' : '') + '" data-env="' + e[0] + '">' + LABEL[e[0]] + '</button>';
   }).join('');
   $('hr-env').addEventListener('click', function (ev) {
     var b = ev.target.closest('button'); if (!b) return;

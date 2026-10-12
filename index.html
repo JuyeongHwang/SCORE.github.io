@@ -11,7 +11,7 @@
   <link rel="icon" href="static/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/score.css?v=4">
+  <link rel="stylesheet" href="static/css/score.css?v=5">
 </head>
 <body>
 
@@ -153,7 +153,7 @@
   <div class="wrap">
     <div class="eyebrow">Interactive replay</div>
     <h2>Compare SCORE, Human, and Track in the study scenes</h2>
-    <p>Pick one of the ten user-study scenarios and replay pre-computed head trajectories. Nothing is generated live: SCORE runs, VR participants, and the saliency baseline <i>Track</i> are recorded data. Trajectories are aligned by progress along the path (participants walked at their own pace).</p>
+    <p>Pick one of the ten user-study scenarios and replay pre-computed head trajectories. Nothing is generated live: SCORE runs, VR participants, and the saliency baseline <i>Track</i> are recorded data. Since head motion is what matters here, each participant is placed on the same path as SCORE and Track: their pace and pauses are kept, and their head orientation relative to their own walking direction is re-applied to that path. Trajectories are aligned by progress along the path.</p>
 
     <div class="replay">
       <div>
@@ -220,9 +220,9 @@
     <div class="eyebrow">Head-rotation trajectories</div>
     <h2>The shape of looking around</h2>
     <p>Each trace follows the tip of the head's forward vector over a whole trial (light → dark = start → end). Humans sweep wide arcs toward the path, seats, or traffic, then return. SCORE produces the same kind of purposeful excursions. Track barely leaves a small saliency-driven region, and its traces look alike regardless of the scene.</p>
-    <div class="viewer-tabs" id="hr-env" style="border:1px solid var(--line);border-radius:var(--radius) var(--radius) 0 0;border-bottom:0"></div>
+    <div class="scene-pick"><span class="label">Scenario</span><div class="seg seg-lg" id="hr-env" role="tablist"></div></div>
     <figure>
-      <div class="figure-card" style="border-radius:0 0 var(--radius) var(--radius)"><img id="hr-img" src="static/images/supp/headrot_bus.jpg" alt="Head-direction trajectories of Human, SCORE and Track for two examples under APC and MDC"></div>
+      <div class="figure-card"><img id="hr-img" src="static/images/supp/headrot_bus.jpg" alt="Head-direction trajectories of Human, SCORE and Track for two examples under APC and MDC"></div>
       <figcaption id="hr-cap"></figcaption>
     </figure>
     <h3>Rotate it yourself</h3>
@@ -356,11 +356,11 @@
   </div>
 </footer>
 
-<script src="static/js/results.js?v=4"></script>
-<script src="static/js/replay.js?v=4"></script>
-<script src="static/js/headrot.js?v=4"></script>
-<script src="static/js/examples.js?v=4"></script>
-<script src="static/js/ollama-demo.js?v=4"></script>
+<script src="static/js/results.js?v=5"></script>
+<script src="static/js/replay.js?v=5"></script>
+<script src="static/js/headrot.js?v=5"></script>
+<script src="static/js/examples.js?v=5"></script>
+<script src="static/js/ollama-demo.js?v=5"></script>
 <script>
   (function () {
     var btn = document.getElementById('theme-btn');

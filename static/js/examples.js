@@ -71,9 +71,6 @@
           var n = m.steps.filter(function (s) { return s.res && s.res !== 'keep'; }).length;
           return { label: m.scene + ' · ' + m.agent, meta: m.steps.length + ' planned actions, ' + n + ' changed by RES.', steps: m.steps };
         }) },
-        { title: 'Ablation: driver removed', items: ex.ablation.map(function (a) {
-          return { label: a.variant + ' · ' + a.scene, meta: 'Prompt without the ' + a.variant.replace('w/o ', '') + ' driver.', steps: a.steps };
-        }) },
         { title: 'Released code · local Qwen', items: planItems }
       ]);
     });

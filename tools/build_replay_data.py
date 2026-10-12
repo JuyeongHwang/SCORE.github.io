@@ -107,7 +107,28 @@ def human_frame_rotation(folder, score_ref):
     return float(np.round(theta / 90.0) * 90.0) % 360.0
 
 
-def load_human(folder, origin, theta=0.0):
+def place_on_path(t, p, q, ref):
+    """Moves a human trial onto the SCORE reference path, keeping the head motion.
+
+    Position: the point of the reference path at the same fraction of distance walked
+    (pauses and pace of the participant are kept). Head: the orientation relative to the
+    participant's walking direction is re-applied to the reference walking direction."""
+    rs = np.array(ref["s"]).reshape(-1, 8)
+    seg = np.hypot(np.diff(rs[:, 1]), np.diff(rs[:, 2]))
+    rarc = np.concatenate([[0], np.cumsum(seg)]); rarc /= max(rarc[-1], 1e-6)
+    hseg = np.hypot(np.diff(p[:, 0]), np.diff(p[:, 1]))
+    harc = np.concatenate([[0], np.cumsum(hseg)]); harc /= max(harc[-1], 1e-6)
+    ryaw = np.unwrap(np.radians(rs[:, 7]))
+    new_p = np.column_stack([np.interp(harc, rarc, rs[:, 1]), np.interp(harc, rarc, rs[:, 2])])
+    new_yaw = np.degrees(np.interp(harc, rarc, ryaw))
+    old_yaw = yaw_from_path(p, t)
+    d = np.radians(new_yaw - old_yaw) / 2
+    # yaw-only change of frame, applied in world space: q' = Ry(new - old) * q
+    new_q = np.array([qmul((0.0, np.sin(a), 0.0, np.cos(a)), q[i:i + 1])[0] for i, a in enumerate(d)])
+    return new_p, new_q, new_yaw
+
+
+def load_human(folder, origin, theta=0.0, ref=None):
     files = sorted(glob.glob(os.path.join(ROOT, "05_Codes/SCORE/Assets/Human/HumanData", folder, "*.csv")),
                    key=lambda f: int(re.findall(r"(\d+)\.csv$", f)[0]))
     out = []
@@ -123,7 +144,11 @@ def load_human(folder, origin, theta=0.0):
             q = qmul((0.0, np.sin(r / 2), 0.0, np.cos(r / 2)), q)
         p = p + origin
         k = re.findall(r"(\d+)\.csv$", f)[0]
-        out.append({"label": f"P{int(k):02d}", "s": flat(resample(t, p, q, yaw_from_path(p, t)))})
+        if ref is not None:
+            p, q, yaw = place_on_path(t, p, q, ref)
+        else:
+            yaw = yaw_from_path(p, t)
+        out.append({"label": f"P{int(k):02d}", "s": flat(resample(t, p, q, yaw))})
     return out
 
 
@@ -158,7 +183,7 @@ def main():
             s0 = np.array(score[0]["s"][:8])
             origin = np.array([s0[1], s0[2]])
             theta = human_frame_rotation(env + folder, score[0])
-            human = load_human(env + folder, origin, theta)
+            human = load_human(env + folder, origin, theta, ref=score[0])
             track = load_track(env + folder, score[0])
             data = {"scene": scene, "env": env, "cond": cond, "goal": GOALS[env], "humanFrameYaw": theta,
                     "methods": {"SCORE": score, "Human": human, "Track": track}}
