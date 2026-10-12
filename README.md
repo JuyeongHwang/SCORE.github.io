@@ -13,6 +13,7 @@ static/js/examples.js       action-reason traces (examples.json, plans/*.json)
 static/js/ollama-demo.js    SCORE prompts against the visitor's own Ollama server
 static/data/scenes/*.json   replay data (built by tools/build_replay_data.py)
 static/data/examples.json   logged action-reason pairs from SCORE runs
+static/videos/              supplementary video
 static/data/plans/          optional: time-stamped plans exported by the Unity code (+ index.json)
 static/webgl/Build/         Unity WebGL build of the study scenes (SCORE_WebReplay project)
 ```
