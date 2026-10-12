@@ -1,0 +1,890 @@
+{
+ "single": [
+  {
+   "scene": "CrossingAbnormal",
+   "run": "Run A",
+   "steps": [
+    {
+     "action": "Looking at Policeman",
+     "explanation": "I am prioritizing looking forward due to my habit and the need for safe navigation.  However, I will also glance at the Policeman and Person1 as they represent a point of social interest and potentially relevant information. Because I have already observed two people crossing the street and nothing else is present, I will first look at the Policeman."
+    },
+    {
+     "action": "Looking at Person1",
+     "explanation": "I chose to look at Person1 because they are interacting with the Policeman, which could provide valuable social information.  This action balances my information-seeking and social schema subtasks while still prioritizing safety and my habit of looking forward."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety is prioritized to ensure I can navigate effectively.  Information-seeking is important as I need to expand my understanding of the environment. Habit is also a factor as I tend to look forward. Interest is considered as exploring forward may reveal interesting things.  Social Schema is minimally considered since continued staring would violate social norms. I choose to search forward because it aligns with safe navigation, my forward-looking habit, potential for discovering new points of interest, and the need to gather more information about my environment for effective navigation towards my destination."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "I am choosing to search forward because it prioritizes safe navigation by allowing me to see potential obstacles or changes in the environment. It also aligns with my habit of looking forward.  Additionally, exploring forward allows me to gather more information about the surrounding area, which is crucial for reaching my destination.  While I acknowledge the social aspect of the Policeman and Person1, further observation might breach social norms, and it doesn't directly contribute to my navigation goal. There's also a small chance of something interesting being further ahead."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety is prioritized (3 points) because I need to be aware of any obstacles or changes in the environment ahead to navigate safely. Information-seeking is also important (4 points) as I need to learn more about my surroundings to reach my destination. My habit of looking forward (1 point) also influences this decision.  Interest (1 point) is given a small score as there might be something interesting ahead. Social schema (1 point) is minimally considered to avoid excessive focus on the Policeman and Person1."
+    },
+    {
+     "action": "Search right",
+     "explanation": "I chose to search right because it balances several important factors. Safety (3 points) is important because I need to be aware of my surroundings to avoid potential hazards. Information-seeking (2 points) is also important because I need to learn more about the environment to reach my destination. Searching right addresses both of these, expanding my field of view.  Social schema (2 points) is considered, as I avoid prolonged focus on the Policeman and Person1. Interest (2 points) is factored in as exploring a new direction might reveal something interesting. Habit (1 point) is acknowledged, but I'm actively counteracting my tendency to only look forward to achieve a more balanced and safer navigation strategy."
+    },
+    {
+     "action": "Search left",
+     "explanation": "I chose to search left because it addresses safety by allowing me to see potential hazards.  It also contributes to information-seeking by expanding my knowledge of the environment.  Interest is also a factor, as looking left might reveal something new. My habitual forward-looking is acknowledged but down-weighted to encourage broader visual exploration. Social schema is minimally relevant as there are currently no pressing social interactions in my immediate vicinity. This action aims to balance the competing subtasks while prioritizing a more balanced and informed navigation strategy.  My head has turned significantly to the right, so turning left will bring my view closer to the forward direction, aligning with my habit."
+    },
+    {
+     "action": "Search left",
+     "explanation": "I chose to search left to balance various factors. Safety (3 points) is paramount as I need to see potential obstacles.  Information-seeking (3 points) is crucial for navigating towards my destination. Interest (2 points) is factored in as something new might be discovered on the left.  Habit (1 point) is addressed by bringing my view closer to the forward direction.  Social schema (1 point) is considered by avoiding staring at the Policeman and Person1."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4 points) is prioritized as I need to be aware of the approaching car and any potential obstacles ahead. Information-seeking (3 points) is important for understanding the road layout and navigating effectively.  Habit (1 point) is acknowledged, and this action partially satisfies it by moving my gaze closer to the forward direction. Interest (1 point) is minimally considered as there might be something of interest ahead. Social schema (1 point) is also minimally considered, as avoiding prolonged stares at the police officer and other individuals is socially appropriate.  This action aims to balance the competing subtasks while prioritizing safe and effective navigation."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4 points) is prioritized because maintaining a forward view is crucial for safe navigation. Information-seeking (3 points) is important as I need to see what's ahead to plan my route. Habit (1 point) is satisfied by looking forward. Interest (1 point) is a minor factor, as there might be something interesting further down the road. Social Schema (1 point) is considered by avoiding staring at the individuals on the corner."
+    },
+    {
+     "action": "Search right",
+     "explanation": "I chose to search right because it supports several important goals. Safety (3 points) is important because I need to be aware of my surroundings, especially now that my field of view has shifted significantly to the left. Information-seeking (2 points) is also important because exploring a different direction can provide valuable information about the environment. Searching right helps with this by broadening my perspective. Social schema (2 points) is considered as glancing at different areas is more natural than fixating on one spot.  Interest (2 points) is factored in, hoping that a new viewpoint reveals something interesting. My habit (1 point) of looking forward is acknowledged, and this action contributes to resetting my head position closer to the front.  Therefore, \"Search right\" is the most appropriate action to take at this time, promoting both safe and effective navigation while maintaining a natural appearance."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4 points) is prioritized because maintaining a forward view is crucial for safe navigation. Information-seeking (3 points) is important as I need to see what's ahead to plan my route. Habit (1 point) is satisfied by looking forward. Interest (1 point) is a minor factor, as there might be something interesting further down the road. Social Schema (1 point) is considered by avoiding staring at the individuals on the corner."
+    }
+   ]
+  },
+  {
+   "scene": "CrossingAbnormal",
+   "run": "Run B",
+   "steps": [
+    {
+     "action": "Looking at Person1",
+     "explanation": "Safety is paramount when navigating, especially near crosswalks (4 points). There's some interest in observing the people on the crosswalk (1 point).  Adhering to social norms means being aware of pedestrians and potential interactions (2 points). Gathering more information about the crosswalk situation is important for safe navigation (2 points). Maintaining my habit of looking forward helps with general navigation (1 point). I choose to look at Person1, as they are on the crosswalk and represent a potential navigation concern that needs monitoring."
+    },
+    {
+     "action": "Looking at Policeman",
+     "explanation": "Safety is prioritized (3 points) due to the potential hazard of vehicles near the parked cars where the Policeman and BusinessMan_Shirt are standing.  Maintaining a habit of looking forward (1 point) is also important. Information-seeking (3 points) is relevant as I need to be aware of any changes in the environment related to the parked cars and potential traffic. Social schema (2 points) encourages acknowledging the presence of others (Policeman and BusinessMan_Shirt).  Interest (1 point) plays a minor role, as the primary focus is on safe navigation. Since I have already observed Person1 twice, I am shifting my focus to the Policeman to maintain situational awareness and assess potential traffic hazards near parked cars."
+    },
+    {
+     "action": "Looking at Person1",
+     "explanation": "Safety is paramount (4 points), as the parked cars pose a potential hazard. Information-Seeking (3 points) is important to ensure safe navigation around the parked cars.  I'm giving a minor weight to Interest (1 point) in the interaction between the Policeman and Character_Male_Jacket. Social Schema (1 point) is acknowledged by periodically observing others. Habit (1 point) encourages looking ahead. Because Person1 has been observed twice already, I am briefly checking on their status before returning my gaze towards the Policeman and Character_Male_Jacket by the cars."
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (4 points) is paramount due to the potential hazard of vehicles near parked cars. Information-Seeking (4 points) is crucial for gathering data about the environment to the right, supporting safe navigation. Social Schema (1 point) is minimally addressed by maintaining peripheral awareness of the ongoing interaction. Habit (1 point) is partially satisfied by looking in a generally forward direction. Interest (0 points) is de-prioritized in favor of safe navigation. Since I have already observed both the Policeman and Person1 twice, and my neck has twisted quite a bit, exploring to the right provides the best balance between maintaining awareness and prioritizing safety."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4 points) is prioritized as I need to be aware of any potential hazards in the direction of travel.  Information-Seeking (3 points) is important because I need to understand what's ahead of me to navigate effectively. Habit (1 point) is satisfied by looking forward.  Social Schema (1 point) is maintained through general awareness of my surroundings, which is important even when moving forward. Interest (1 point) is given a minimal score as the primary focus is on safe and efficient navigation, but some interest lies in exploring the environment.  Since my neck has rotated considerably to the right, searching forward allows for neck readjustment and aligns with the habitual forward-looking behavior."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4 points) is paramount, requiring awareness of potential obstacles in my path. Information-Seeking (4 points) is crucial for understanding the environment ahead and making informed navigation decisions.  Habit (1 point) is maintained by looking forward, a natural behavior for navigation. Social Schema (1 point) is minimally addressed by maintaining general awareness of the surrounding environment, anticipating the potential presence of others. Interest (0 points) is de-prioritized as the primary focus is on safe and efficient forward movement.  Since my neck has rotated significantly, and I've gathered sufficient information about the crosswalk interaction, searching forward is the most appropriate action to refocus on navigation and readjust my head position."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4 points) is paramount as I need to be aware of potential obstacles in my path. Information-Seeking (4 points) is crucial for effective navigation and understanding the environment ahead. Habit (1 point) is maintained by looking forward, a natural behavior for navigation.  Social Schema (1 point) is minimally considered, assuming a general awareness of the environment and potential presence of others.  Interest (0 points) is de-prioritized in favor of safe and efficient forward movement. Since my neck has already turned significantly and I've gathered sufficient information about the crosswalk, searching forward is the best action to refocus on navigation."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4 points) is paramount, as I need to ensure a clear path ahead and avoid potential obstacles. Information-Seeking (4 points) is crucial for understanding the environment in front of me and planning my navigation. Habit (1 point) is satisfied by looking forward, a natural behavior for navigation.  Social Schema (1 point) is minimally addressed, acknowledging a general awareness of the surroundings, but not actively engaging since I am focused on safe navigation. Interest (0 points) is de-prioritized in favor of safety and efficient navigation. Repeated searching forward action is necessary to both gather information about the road ahead and adjust the head back to its natural position."
+    },
+    {
+     "action": "Looking at Policeman",
+     "explanation": "Safety is paramount (3 points) as I am approaching a crosswalk.  Social Schema (3 points) is important as the policeman's presence suggests potential traffic regulation or an unusual situation. Information-Seeking (2 points) is relevant as observing the policeman and Person1 may provide clues about the traffic situation.  Habit (1 point) encourages me to look forward, but it is less critical at this moment. Interest (1 point) is present as the overall situation is dynamic. I choose to look at the Policeman because observing his behavior and any signals he might be giving is crucial for safe crossing. It also addresses social schema by acknowledging his presence."
+    },
+    {
+     "action": "Looking at Person1",
+     "explanation": "Safety (3 points) remains paramount as I am about to cross the road. Information-Seeking (3 points) is crucial as I need to gather more information about the traffic situation before proceeding. Social Schema (2 points) encourages me to be aware of the other people at the crosswalk and their potential actions. Habit (1 point) encourages looking forward, while Interest (1 point) is present as I am curious about the ongoing situation and others¡¯ actions. I choose to look at Person1 as they are also present near the crosswalk, and observing their behavior might provide further insights into the traffic situation, complementing my prior observation of the Policeman.  This balances Information-Seeking with maintaining Safety and awareness of the social context."
+    },
+    {
+     "action": "Looking at BusinessMan_Shirt",
+     "explanation": "Safety (3 points) is paramount as I am about to cross the road. Information-Seeking (3 points) is crucial to understand the traffic flow and potential dangers. Social Schema (2 points) encourages me to behave naturally and not fixate on the Policeman and Person1.  Habit (1 point) supports looking forward. Interest (1 point) remains as I am curious about the overall situation, especially regarding the approaching BusinessMan_Shirt. Since I have already observed the Policeman and Person1 twice, I choose to look at BusinessMan_Shirt to gain a better understanding of the immediate traffic situation and his behavior on the crosswalk, which is vital for my safe crossing."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (3 points) is prioritized as I am about to cross the road. Information-Seeking (4 points) is crucial because I need to assess the traffic situation beyond Person1 and the Policeman, especially the crosswalk itself and any approaching vehicles or pedestrians. Habit (1 point) reinforces the need to look forward before crossing. Social Schema (1 point) is present as I'm conscious of being a pedestrian in a public space, and Interest (1 point) exists as I am generally curious about my environment. Since I have already observed Person1 and the Policeman twice and my object list doesn't give me enough information about the immediate environment, I choose to search forward to proactively ensure safe crossing by directly observing the crosswalk area and any approaching traffic."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (3 points) remains the highest priority, as crossing the road safely is the primary objective.  Information-Seeking (4 points) is crucial as I need to assess the traffic situation directly before proceeding. Habit (1 point) supports looking forward, which aligns with safe road crossing behavior. Social Schema (1 point) is present as I am aware of my surroundings and want to ensure my actions are appropriate, but it is less of a priority than ensuring safe crossing. Interest (1 point) is present as I am curious about the environment ahead, but it is subordinate to safety and information gathering in this context.  Searching forward is the most appropriate action to ensure a safe crossing by directly observing the crosswalk and approaching traffic."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4 points) is the highest priority, as crossing the road safely is paramount. Information-Seeking (3 points) is crucial for assessing the immediate traffic situation on the crosswalk.  Habit (1 point) reinforces looking forward, which is necessary for safe crossing. Social Schema (1 point) is present, as I want to behave appropriately in public, but it's less important than safety. Interest (1 point) is present as I am curious about my surroundings, but again, less crucial than safe crossing. I have already observed the Policeman and Person1 twice, so searching forward directly assesses the crosswalk and oncoming traffic, which is the most crucial information for safe navigation."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4 points) is paramount as I need to ensure I can cross the road without incident. Information-Seeking (3 points) is crucial for assessing the immediate traffic situation on the crosswalk before stepping onto it. Habit (1 point) supports looking forward, which is essential for safe road crossing. Social Schema (1 point) is present, as I want to behave appropriately as a pedestrian, but safety overrides it. Interest (1 point) is present, but it's less important than safely navigating the crosswalk.  I have performed ¡°Search forward¡± twice already, but given the dynamic nature of the crosswalk environment and the lack of detailed information in my object list, it is crucial to refresh my understanding of the immediate situation with a new forward search before crossing."
+    }
+   ]
+  },
+  {
+   "scene": "CrossingNormal",
+   "run": "Run A",
+   "steps": [
+    {
+     "action": "Search right",
+     "explanation": "Safety is paramount on a pedestrian crossing, so I allocated 4 points to it. Checking the road to the right aligns with both safety and information-seeking (2 points each), as it helps me understand the traffic situation. Social schema (2 points) encourages responsible crossing behavior. Interest (1 point) is present as I still want to observe my environment. Habit (looking forward) gets 1 point, overridden by the higher priority of safety.  I chose to look right to ensure no vehicles are approaching before I continue walking."
+    },
+    {
+     "action": "Looking at SM_Prop_Manhole_07",
+     "explanation": "Safety (3 points):  Assessing the steaming manhole directly addresses potential safety risks associated with it.\nInterest (2 points):  The unusual sight of a steaming manhole piques my curiosity.\nSocial Schema (1 point): Being aware of obstacles on the pedestrian crossing is socially responsible behavior.\nInformation-Seeking (3 points):  Looking directly at the manhole allows me to gather specific information about its condition and potential risks.\nHabit (1 point): While not fully forward, it's closer to my usual viewing direction than looking right or left.  I need to assess this immediate potential hazard before continuing to walk forward.  I am prioritizing short-term safety (avoiding the manhole) over general awareness of my forward path at this stage."
+    },
+    {
+     "action": "Looking at SM_Env_Road_Crossing_06",
+     "explanation": "I am prioritizing safety and information-seeking to ensure I can cross safely. I also maintain my habit of looking forward while walking and glance at the car which caters to Interest and Social Schema."
+    },
+    {
+     "action": "Looking at SM_Env_Sidewalk_Dip_Corner_02",
+     "explanation": "I've chosen to look at the sidewalk dip (SM_Env_Sidewalk_Dip_Corner_02) because it's the most relevant immediate concern for safe navigation. While crossing the road is important, I¡¯ve already gathered information about it and there are currently no moving objects.  Focusing on the sidewalk dip allows me to anticipate the change in terrain and adjust my gait accordingly, thus maximizing safety. This action also addresses the information-seeking subtask by gaining a better understanding of the dip's severity and exact location.  Maintaining a forward gaze contributes to my habitual walking style. I¡¯ve allocated a small point to Interest as visually inspecting the dip might reveal interesting details about its construction or potential obstacles within it."
+    }
+   ]
+  },
+  {
+   "scene": "MallNormal",
+   "run": "Run A",
+   "steps": [
+    {
+     "action": "Search forward",
+     "explanation": "The primary focus is on Information-Seeking as I need to understand the path forward and locate my destination. Safety is also important, hence the moderate score. Interest is also a factor, as new information may reveal interesting features.  Social Schema has a low score, as the immediate surroundings don't present strong social considerations.  Habit encourages looking forward, aligning with the exploration decision.  Since I have been static for two frames, I need to actively explore to progress and fulfill the cognitive goal."
+    },
+    {
+     "action": "Search right",
+     "explanation": "I chose to \"Search right\" because it balances several factors:\n\n* **Safety:** Expanding my field of view to the right improves my awareness of potential obstacles or hazards.\n* **Information-Seeking:**  Exploring unseen areas helps gather more information about the environment and potential navigation paths.\n* **Interest:** There might be interesting elements to the right of the Arcade Zone.\n* **Habit and Social Schema:**  While my habit is to look forward, occasionally glancing around is expected in a public space like a mall and ensures I'm not fixated on a single element."
+    },
+    {
+     "action": "Looking at SM_Prop_Gumball_Machine_01",
+     "explanation": "I chose \"Looking at SM_Prop_Gumball_Machine_01\" because:\n\n* **Information-Seeking:**  I haven't observed this object yet, and it could provide new information about the environment.\n* **Interest:** Gumball machines are visually distinctive and can be a point of interest.\n* **Habit:** This action incorporates my tendency to look forward by assuming a likely position of the gumball machine near the entrance.\n* **Safety:**  Returning my head to a more forward-facing position can improve overall awareness and reduce the risk of missing potential hazards.\n* **Social Schema:** Observing elements in the environment, like gumball machines near an entrance, is typical behavior."
+    },
+    {
+     "action": "Looking at Arcade_Robot_Left",
+     "explanation": "I chose \"Looking at Arcade_Robot_Left\" again because:\n\n* **Safety (3):**  Observing the robot again helps assess if the entrance is clear or if it poses any obstacle to entering. This contributes directly to safe navigation.\n* **Information-Seeking (3):**  A second look might reveal details I missed earlier, like how the robot is moving or if anything else is near the entrance.\n* **Social Schema (2):** Briefly observing something near an entrance before entering is socially acceptable behavior.\n* **Interest (1):** Although I've seen it before, a quick glance can confirm if anything has changed with the robot, satisfying a minor point of curiosity.\n* **Habit (1):**  Looking forward before moving is a common habit and reinforces cautious navigation."
+    },
+    {
+     "action": "Search right",
+     "explanation": "This action, \"Search right\", is chosen for the following reasons:\n\n* **Safety (3):**  Scanning to the right before entering the Arcade Zone is crucial for safety. It helps identify any potential obstacles or hazards like people walking quickly or other unforeseen obstructions, allowing me to avoid collisions and navigate safely.\n* **Information-Seeking (3):** Searching right provides a broader view of the environment, gathering information about the area immediately adjacent to the Arcade Zone entrance. This could reveal additional navigation options or points of interest.\n* **Social Schema (2):**  Briefly looking around before proceeding through a doorway is a common social behavior, indicating awareness of others and avoiding accidental bumps or intrusions.\n* **Habit (1):** While my habit is to look forward, incorporating occasional glances to the sides contributes to a more natural and comprehensive understanding of the surroundings.\n* **Interest (1):**  There might be something interesting to the right of the Arcade Zone entrance, and a quick glance can satisfy this curiosity without significantly deviating from the main goal."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "This action, \"Search forward\", is crucial for the following reasons:\n\n* **Safety (4):** Before stepping forward, I need to confirm that the pathway is clear directly in front of me.  My previous actions involved looking at objects to the left and above the entrance, so my current field of view doesn't cover the immediate path.  This forward search is essential for preventing collisions and ensuring safe navigation.\n* **Social Schema (3):** Looking where you're going before walking is fundamental social behavior. It demonstrates awareness of your surroundings and prevents awkward or dangerous interactions with others.\n* **Information-Seeking (2):** While I've observed the general area, a final forward glance updates my understanding of the immediate path, confirming that nothing has changed in the short time since my last observation.  This is vital for dynamic environments where small changes can occur quickly.\n* **Habit (1):** Looking forward before moving aligns with my established habit of looking forward and promotes cautious navigation.\n* **Interest (0):** There's no specific object of interest driving this action.  The focus here is entirely on safe and socially appropriate navigation."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "This action, \"Search forward\", is prioritized for the following reasons:\n\n* **Safety (4):**  A final check of the path directly ahead is absolutely crucial for safe navigation before stepping forward. This prevents collisions with unforeseen obstacles or people.\n* **Social Schema (3):** Looking where you are going before walking is a fundamental social behavior, demonstrating awareness and preventing accidents.\n* **Information-Seeking (2):**  This final glance updates my understanding of the immediate path, ensuring nothing has changed in the short time since my last broader observation of the area.\n* **Habit (1):** Looking forward aligns with my habitual forward gaze and reinforces careful movement.\n* **Interest (0):** There's no specific object of interest; this action is purely for safe and socially appropriate navigation."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "This action, \"Search forward\", is chosen for the following reasons:\n\n* **Safety (4):** This is the most critical factor. Before physically moving forward, a final, focused check of the immediate path is absolutely necessary to avoid any last-second obstacles or collisions.\n* **Social Schema (3):** Looking where you are going immediately before stepping forward is a fundamental and expected social behavior.  It demonstrates awareness and consideration for others.\n* **Information-Seeking (2):** This last check serves as a real-time update of the immediate path, confirming that nothing has changed in the brief moments since my previous observations. While I've looked forward before, the dynamic nature of the environment necessitates this final confirmation.\n* **Habit (1):** This action aligns with my habit of looking forward before moving, promoting cautious and deliberate navigation.\n* **Interest (0):** There is no specific object of interest prompting this action.  The focus is entirely on safe and socially appropriate movement towards the goal."
+    },
+    {
+     "action": "Search right",
+     "explanation": "This action, \"Search right\", is chosen for the following reasons:\n\n* **Safety (4):** A final glance to the right immediately before entering the Arcade Zone is a crucial safety precaution. It ensures that no one is approaching quickly from the side, preventing a potential collision as I step through the entrance.\n* **Information-Seeking (3):**  This quick scan provides a real-time update of the area immediately to the right of the entrance, supplementing my previous observations and ensuring I have the most current information before proceeding.\n* **Social Schema (2):**  Briefly looking around before stepping through a doorway is a common social behavior, indicating awareness of others and minimizing the chance of disruptive interactions.\n* **Habit (1):** While my habit is to look forward, incorporating occasional glances to the sides contributes to a more comprehensive understanding of the surroundings.\n* **Interest (0):** This action is not driven by interest in any particular object, but rather by a focus on safe and socially appropriate navigation."
+    }
+   ]
+  },
+  {
+   "scene": "MallNormal",
+   "run": "Run B",
+   "steps": [
+    {
+     "action": "Looking at SM_Sign_Canvas_Banner_05",
+     "explanation": "I chose \"Looking at SM_Sign_Canvas_Banner_05\" because it contributes to multiple objectives: information-seeking by potentially revealing information about the mall, interest by showcasing potentially interesting offers, and social schema as it is normal to look at advertisements in a mall.  It also aligns with my habit of looking forward. Lastly, briefly glancing at a banner contributes to safety by ensuring I am aware of my immediate surroundings and not walking into anything near it. The scores are distributed evenly as all subtasks are relevant to this action."
+    },
+    {
+     "action": "Looking at SM_Bld_Wall_Glass_Door_Double_01",
+     "explanation": "I chose \"Looking at SM_Bld_Wall_Glass_Door_Double_01\" because it is crucial for navigation. The doors mark the entrance to the Arcade Zone, which likely serves as a landmark for wayfinding within the mall. This directly supports my primary cognitive goal of reaching my destination. Looking at the doors also contributes to safety by ensuring I'm aware of the pathway and potential obstacles. Additionally, focusing on a designated entrance adheres to social schemas within a mall environment. Lastly, looking forward, which the double glass doors will be positioned, aligns with my established habit."
+    },
+    {
+     "action": "Looking at SM_Prop_Lighting_Spotlight_05",
+     "explanation": "I chose \"Looking at SM_Prop_Lighting_Spotlight_05\" because it contributes to safety by illuminating the walkway ahead and ensuring a clear path to the Arcade Zone. This action also fulfills the information-seeking objective by revealing more about the environment's layout and reinforces the location of the Arcade Zone. It aligns with my habit of looking forward. The spotlights are positioned above the sign and entrance, ensuring I'm aware of the path forward.  Lastly, observing lighting conditions contributes to social schema, as it is normal to be aware of one's surroundings in a public space."
+    },
+    {
+     "action": "Search right",
+     "explanation": "I choose \"Search right\" because it prioritizes safety by expanding my awareness of the surrounding environment before moving forward.  It contributes to information-seeking by potentially revealing obstacles or alternative paths. While there is a slight inherent interest in discovering what's around me, it's primarily driven by safety and navigation.  Social schema plays a minor role, as glancing around is generally acceptable behavior in public spaces.  Habit also plays a minor role as it is common for humans to look around a new space before making a decision on where to go."
+    },
+    {
+     "action": "Looking at SM_Prop_Arcade_Robot_01",
+     "explanation": "I choose \"Looking at SM_Prop_Arcade_Robot_01\" because it helps re-center my view after the previous rightward search. This action prioritizes safety by ensuring I maintain a natural head position, preventing potential strain. Additionally, observing the robots contributes to interest as they're unique elements of the environment. Social schema plays a role as people often observe interesting objects in public spaces.  Information-seeking is relevant as the robots may provide clues or context about the Arcade Zone. Finally, looking forward aligns with my habit and reinforces the location of my destination."
+    },
+    {
+     "action": "Looking at SM_Bld_Wall_Glass_Door_Double_01",
+     "explanation": "I chose \"Looking at SM_Bld_Wall_Glass_Door_Double_01\" because it is crucial for navigation and safe movement.  It confirms the location of the entrance to the Arcade Zone and helps avoid potential obstacles in the pathway. It aligns with social norms by entering through the designated entrance.  Lastly, looking forward supports my habit."
+    },
+    {
+     "action": "Looking at Character_Male_Jacket",
+     "explanation": "I choose \"Looking at Character_Male_Jacket\" because it is important for safety and contributes to maintaining spatial awareness. Observing the green character's movement towards the escalators allows me to predict their path and adjust my own movement accordingly, preventing potential collisions and ensuring smooth navigation. This contributes to safety by allowing me to anticipate potential interactions within the dynamic mall environment. This also contributes to social schema by being mindful of other people in a public space. There's also a degree of interest in observing others in a shared space, contributing to a richer understanding of my surrounding social environment. Looking at the character also contributes to information-seeking by providing a dynamic reference point within the environment.  While I have a habit of looking forward, in this instance, maintaining spatial awareness and safety overrides that habit temporarily."
+    },
+    {
+     "action": "Search left",
+     "explanation": "I chose \"Search left\" because it prioritizes safety and information-seeking before proceeding through the double doors. This action broadens my view of the surroundings, potentially revealing dynamic obstacles (e.g., other people moving near the entrance) or new information I may have missed.  This is especially important before stepping into a new area. It also contributes to safety by providing a comprehensive view before moving forward. While I have a habit of looking forward, a final scan is a responsible approach to navigation in a public environment, particularly as my head has been turned to observe the green character. This scan also contributes to social schema; being observant of one's environment is appropriate behavior in public areas."
+    },
+    {
+     "action": "Looking at SM_Prop_Arcade_Robot_01",
+     "explanation": "I choose \"Looking at SM_Prop_Arcade_Robot_01\" again because it serves multiple purposes.  It prioritizes safety by returning my view to a more natural, forward-facing position after the previous searches, minimizing potential neck strain.  It also contributes to interest, as the robot is a unique and potentially engaging element of the arcade environment. Information-seeking is relevant as I'm continuing to familiarize myself with the Arcade Zone. Finally, maintaining a natural head position and observing focal points supports appropriate habit and basic social norms."
+    }
+   ]
+  },
+  {
+   "scene": "CafeNormal",
+   "run": "Run A",
+   "steps": [
+    {
+     "action": "Search forward",
+     "explanation": "Information-Seeking is prioritized as finding a table is the primary goal. Safety is important to avoid unnatural head movements. Social Schema encourages movement towards the counter, a typical behavior in a cafe. Interest and Habit are less important at this moment. I chose \"Search forward\" as a balanced exploration strategy, given that I have already searched right."
+    },
+    {
+     "action": "Search left",
+     "explanation": "Information-Seeking is prioritized as finding a table remains the primary goal. Safety is given some weight to ensure balanced head movement and prevent over-rotating in one direction. Social Schema is relevant as I am still generally orienting myself within the cafe. Interest and Habit are less critical at this stage. I chose \"Search left\" to systematically scan for a table, having already looked right and forward.  This provides a wider view of the cafe and increases my chances of spotting a table."
+    },
+    {
+     "action": "Looking at SM_Prop_Cafe_Chair_01 (14)",
+     "explanation": "Information-seeking is prioritized to locate a suitable, empty table.  Social schema and Interest play a role in choosing a table that fits typical cafe behavior and personal preference (even though preference isn't explicitly stated, it's implied in choosing *a* table rather than *any* table). Safety is a minor concern, ensuring no obstacles are in the path. Habit and interest are given lower weights as the immediate priority is finding a table and navigating to the counter.  I'm looking at SM_Prop_Cafe_Chair_01 (14) to examine it as a potential seating option.  Since it's the first chair mentioned and hasn't been looked at previously, it's a reasonable starting point."
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (1): Maintaining peripheral awareness of the counter and avoiding collisions remains a low-level concern.\nInterest (2):  Finding a preferable table is of moderate interest.\nSocial Schema (2): Selecting a table aligns with the social norms of cafe behavior.\nInformation-Seeking (4):  Actively seeking a suitable table is the primary focus, hence the highest score. Exploring to the left will give a broader view of seating options.\nHabit (1):  Walking to a counter in a cafe is habitual, but finding a specific table is less so."
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (1): Maintaining awareness of the surroundings while navigating towards the counter.\nInterest (2):  Finding a desirable table remains important.\nSocial Schema (2): Choosing a table before approaching the counter is typical cafe etiquette.\nInformation-Seeking (4): The primary focus is still on locating an appropriate table, and searching right will provide additional information about seating options.\nHabit (1): Walking towards the counter is a habitual part of cafe behavior, but exploring for an empty table is not."
+    },
+    {
+     "action": "Looking at SM_Prop_Cafe_Chair_02 (6)",
+     "explanation": "Safety (1): Maintaining general spatial awareness remains a low-level priority.\nInterest (3): Assessing the suitability of a specific table near the counter is of moderate interest.\nSocial Schema (2): Selecting a table before approaching the counter aligns with typical cafe behavior.\nInformation-Seeking (4):  Gathering visual details about the chosen table and its proximity to the counter is the primary focus. This informs the subsequent navigation.\nHabit (0): While walking to the counter is habitual, the specific actions involved in selecting a table and navigating to it are less so."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2):  Navigating through the cafe requires increased attention to avoid collisions with tables, chairs, or other patrons.\n\nInterest (2): Maintaining interest in finding a suitable table while beginning the approach to the counter.\n\nSocial Schema (1):  Walking towards the counter after surveying available tables is typical cafe behavior.\n\nInformation-Seeking (4): The primary focus shifts to gaining a dynamic perspective of the table layout as I approach the counter.  This active information-seeking helps confirm the availability and suitability of tables while making progress toward the goal.\n\nHabit (1):  Walking towards the counter is habitual, but the specific path taken will be determined by the ongoing assessment of table availability."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2):  Navigating through the cafe requires increased attention to avoid collisions with tables, chairs, or other patrons. This is slightly more important now that I'm moving.\n\nInterest (2): Maintaining interest in finding a suitable table while continuing the approach to the counter.\n\nSocial Schema (1):  Walking towards the counter after surveying available tables is typical cafe behavior.\n\nInformation-Seeking (4):  The primary focus remains on finding a suitable table while approaching the counter. Moving forward provides a dynamic perspective and allows for a better assessment of table availability and proximity to the counter.\n\nHabit (1):  Walking towards the counter is habitual."
+    },
+    {
+     "action": "Looking at SM_Prop_Cafe_Chair_01 (12)",
+     "explanation": "Safety (2):  Maintaining spatial awareness while navigating the cafe remains important.  Since I am planning to move again soon, obstacle avoidance matters.\nInterest (3): Selecting a specific table holds moderate interest as it's connected to the overall goal of enjoying the cafe experience.\nSocial Schema (2): Choosing a table fits within typical cafe behavior.\nInformation-Seeking (3): Visually confirming the chosen table's suitability before moving closer to the counter is valuable information.\nHabit (0): While approaching the counter is somewhat habitual, selecting a *specific* table isn't."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2): Maintaining spatial awareness as I begin moving through the cafe is important to avoid collisions.\n\nInterest (2): Maintaining interest in the chosen table while approaching the counter.\n\nSocial Schema (1):  Approaching the counter after selecting a table is typical cafe behavior.\n\nInformation-Seeking (4):  The primary focus shifts from finding *any* table to assessing the suitability of the *chosen* table as I approach it. This dynamic perspective provides more information than static observation.\n\nHabit (1):  Walking towards the counter is habitual."
+    }
+   ]
+  },
+  {
+   "scene": "CafeAbnormal",
+   "run": "Run A",
+   "steps": [
+    {
+     "action": "Looking at SM_Prop_Cafe_Chair_01 (14)",
+     "explanation": "Safety (1):  Maintaining general awareness of the surroundings (fire alarm, other obstacles).\nInterest (2):  Finding a suitable table is of primary interest.\nSocial Schema (2):  Finding a table before ordering is standard cafe procedure.\nInformation-Seeking (4):  Visually confirming the availability of the chairs and the location of the counter are the key information needs right now.\nHabit (1):  Walking into a cafe and heading towards the counter is habitual.\n\nThe primary focus is information-seeking because assessing table availability is crucial before reaching the counter.  I am choosing to look at a specific chair to gather more detailed information about its occupancy."
+    },
+    {
+     "action": "Looking at SM_Prop_Cafe_Chair_01 (12)",
+     "explanation": "Looking at SM_Prop_Cafe_Chair_01 (12) is crucial for confirming the table's full availability. The previous action focused on one chair (SM_Prop_Cafe_Chair_01 (14)), and this action completes the assessment of this particular table.  It directly serves the information-seeking objective. This also supports the interest objective (finding a desirable table) and adheres to social schemas (checking before sitting). Safety is maintained by general awareness, and the habit of walking to the counter is momentarily paused to prioritize finding a seat."
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (1): Maintaining general awareness of the surroundings remains important, though it's not the primary focus right now.\nInterest (3): Finding a good table to sit at is a key motivator.\nSocial Schema (2): Locating a table before ordering is standard cafe etiquette.\nInformation-Seeking (4):  Actively seeking an available table drives the need to visually scan the cafe for alternatives. \nHabit (0): The usual habit of walking directly to the counter is paused to prioritize finding a suitable table."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (1): Maintaining general awareness of surroundings.\nInterest (3): Finding a suitable table remains the primary interest.\nSocial Schema (2): Finding a table before approaching the counter aligns with typical cafe behavior.\nInformation-Seeking (4): Actively seeking a table by visually scanning the cafe for suitable seating, particularly those not yet visible. Moving forward allows for discovering new seating options.\nHabit (0): The habitual action of proceeding directly to the counter is superseded by the need to find a table.  Forward movement supports the goal-directed behavior of finding a seat before ordering."
+    }
+   ]
+  }
+ ],
+ "ablation": [
+  {
+   "variant": "w/o Safety",
+   "scene": "Crossing (APC)",
+   "steps": [
+    {
+     "action": "Looking at SM_Env_Road_Bare_04",
+     "explanation": "The agent is currently using the pedestrian crossing, and a car is approaching.  The primary concern is safety, hence the high Information-Seeking score.  Looking at the car (SM_Env_Road_Bare_04 as the car is part of the road environment at the intersection) will help assess its speed and trajectory. While some social awareness is important (looking at the driver as per social norms), the priority is ensuring a safe crossing by focusing on the approaching car."
+    },
+    {
+     "action": "Looking at Character_Male_Jacket",
+     "explanation": "The agent is prioritizing safety by checking the other pedestrians (Character_Male_Jacket) on the crosswalk. This action contributes to Information-Seeking by understanding the pedestrian flow and Social Schema by maintaining an awareness of others. While Habit might suggest looking straight ahead, the immediate context requires confirming safe passage with other pedestrians present. There is minimal Interest in this action as it's primarily for safety and social awareness."
+    },
+    {
+     "action": "Looking at Character_Male_Jacket",
+     "explanation": "The Character_Male_Jacket's upwards gaze suggests something out of the ordinary is happening.  Prioritizing Information-Seeking and Interest to understand this situation is crucial. Social Schema is minimally relevant, as acknowledging another pedestrian is secondary to understanding the potential hazard or interesting event they are observing. Habitual forward gaze is superseded by the need to assess the situation indicated by the Character_Male_Jacket.  Safety is implicitly covered under Information-Seeking as the upwards gaze may indicate a safety issue.  Therefore, continuing to look at the Character_Male_Jacket is the most appropriate action."
+    },
+    {
+     "action": "Search up",
+     "explanation": "The Character_Male_Jacket's persistent upwards gaze indicates a potential point of interest or even a safety concern (e.g., falling debris). Looking up directly addresses this by attempting to see what he is looking at.  This primarily serves Information-Seeking and Interest. Social Schema is minimally relevant as the focus has shifted from the person to the potential unseen object. Habit is also low, as the unusual circumstance warrants a deviation from the standard forward gaze while walking."
+    },
+    {
+     "action": "Search right",
+     "explanation": "The primary motivation is to identify what the Character_Male_Jacket is looking at, driving the high Information-Seeking and Interest scores. Social Schema and Habit are negligible as the unusual situation warrants a deviation from typical social behaviors and routines.  Safety is indirectly considered within Information-Seeking, as the Character_Male_Jacket's gaze might indicate a potential hazard. \"Search right\" is chosen over repeatedly looking up or at the Character_Male_Jacket, as further exploration is necessary to discover the unseen object. This action is an attempt to broaden the search area while maintaining the upward focus."
+    },
+    {
+     "action": "Looking at Character_Male_Jacket",
+     "explanation": "The character is approaching a crosswalk, a dynamic and potentially hazardous area. Observing the Character_Male_Jacket directly addresses Safety by ensuring collision avoidance, Interest by observing his behavior in this context, and Social Schema by observing typical pedestrian actions at a crosswalk.  While further exploration is valuable for Information-Seeking, prioritizing immediate safety and socially aware navigation is crucial at this juncture."
+    }
+   ]
+  },
+  {
+   "variant": "w/o Habit",
+   "scene": "Crossing (MDC)",
+   "steps": [
+    {
+     "action": "Search right",
+     "explanation": "I choose to \"Search right\" to gain a broader understanding of the environment beyond the immediate vicinity of the crosswalk and Person1. This action prioritizes information-seeking, contributes to safety by potentially revealing obstacles, and allows me to continue navigating towards the destination while maintaining awareness of my surroundings."
+    },
+    {
+     "action": "Looking at Person1",
+     "explanation": "I choose to look at Person1 briefly to understand their direction of movement and to maintain appropriate social awareness given the prior interaction at the crosswalk. This action satisfies both Interest and Social Schema subtasks. This quick observation is followed by the crucial action of Search forward. The primary concern shifts back to Safety and Information-Seeking, ensuring clear vision of the path ahead for continued navigation."
+    },
+    {
+     "action": "Search left",
+     "explanation": "I choose \"Search left\" because it provides a balanced approach to exploration and information gathering.  It prioritizes Information-Seeking and Safety by expanding my awareness of the environment beyond the immediate vicinity of the crosswalk. It also allocates some points to Interest, allowing for the discovery of potentially interesting elements on the left side of the street.  Finally, a small allocation to Social Schema acknowledges the need for general environmental awareness, which indirectly contributes to appropriate social behavior by ensuring I'm not oblivious to my surroundings."
+    }
+   ]
+  },
+  {
+   "variant": "w/o Habit",
+   "scene": "Street (MDC)",
+   "steps": [
+    {
+     "action": "Looking at SM_Prop_Market_Produce_Stand_01",
+     "explanation": "Prioritizing Safety (4) due to the potential obstacle of the produce stand on the sidewalk.  Interest (2) is given to the banner sign, which may have interesting information. Social Schema (2) is addressed by briefly observing the surroundings. Information-Seeking (2) is allocated for gaining a better understanding of the environment.  I'm choosing to look at the produce stand first to ensure I avoid it, then I will look at the banner."
+    },
+    {
+     "action": "Looking at SM_Sign_Flag_06",
+     "explanation": "Safety (4): Prioritizing safe navigation by focusing on the sidewalk, which is the designated path for pedestrians. Streetlights enhance visibility.\nInterest (1): Maintaining a low level of interest in the banner in case it contains relevant navigation information.\nSocial Schema (2): Maintaining general awareness of the surroundings to ensure socially appropriate navigation.\nInformation-Seeking (3): Investigating the flag sign, as it is currently unknown, and understanding the overall context of the sidewalk's path is important."
+    },
+    {
+     "action": "Looking at SM_Env_Sidewalk_02 (71)",
+     "explanation": "Safety (4): Prioritizing safe navigation by focusing on the sidewalk (SM_Env_Sidewalk_02 (71)) which is the designated pedestrian path. Bollards (SM_Prop_Bollard_01 (24)) are also important for pedestrian safety.\nInterest (2): Allocating some attention to the \"SALE\" banner (SM_Sign_Canvas_Banner_01) as it might provide information relevant to the store.\nSocial Schema (2): Maintaining awareness of the general store environment and ensuring socially appropriate navigation.\nInformation-Seeking (2): Focusing on understanding the immediate path forward by looking at the sidewalk and the division between sidewalk and parking lot via the bollards."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (4):  Prioritizing safe navigation by looking ahead on the sidewalk to anticipate any obstacles or changes in the path.\n\nInterest (1): Maintaining a minimal level of interest in the surrounding shops and features. My primary focus is safe navigation.\n\nSocial Schema (2):  Maintaining awareness of my surroundings to navigate appropriately. Looking ahead is a natural behavior in a public space.\n\nInformation-Seeking (3):  Gathering information about the path ahead to inform future navigation decisions. This is crucial for safe and efficient movement."
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety is prioritized (3 points) as the primary goal.  Looking right allows for assessing potential obstacles or hazards not immediately visible. Interest (3 points) is also relevant, as exploring the environment can reveal interesting details that aid navigation or decision-making, such as pedestrian crossings, other stores, or potential points of interest. Information-Seeking (2 points) is given moderate importance to gain a more comprehensive understanding of the surroundings. Social Schema (1 point) and Habit (1 point) are less critical in this particular situation since the scene is static and devoid of social interactions.  Choosing to look right is a balanced approach to gather more information and potentially identify safer navigation paths, rather than fixating on already observed static elements."
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (5 points) is prioritized because confirming the state of the path directly ahead is crucial for safe walking. Interest (2 points) is a factor as the storefront may offer information about the store or potential points of interest. Information-Seeking (2 points) is relevant to understanding the immediate path forward and the store's offerings. Social Schema (1 point) is minimally relevant, as no social interactions are currently present. Habit (0 points) is not a factor in this decision as simply looking forward isn't habit-driven but a necessity for safe navigation.  Since I've already looked left and right, looking forward is the most logical next step for safe navigation."
+    }
+   ]
+  },
+  {
+   "variant": "w/o Information-seeking",
+   "scene": "Cafe (MDC)",
+   "steps": [
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2): Moving forward cautiously is important to avoid collisions with unseen obstacles in the cafe.  \nInterest (0):  While there might be interesting things around, my priority is finding a table, not exploring out of curiosity.\nSocial Schema (2): Moving towards the counter and tables is a socially expected behavior in a cafe setting.  It aligns with the norms of finding a place to sit before ordering.\nHabit (6): Walking towards a seating area in a food court is a common habitual behavior when intending to dine in. This action aligns with the familiar routine of finding a table before settling down."
+    }
+   ]
+  },
+  {
+   "variant": "w/o Interest",
+   "scene": "Bus (APC)",
+   "steps": [
+    {
+     "action": "Search right",
+     "explanation": "Safety (7): My head is significantly rotated left. Returning it towards neutral is crucial for preventing strain and maintaining a natural appearance. This is the primary motivation for this action.\n\nInterest (2): Locating BackSeat3 and other potential seats remains the goal, but it's secondary to the safety concern.  A more neutral head position will enable a more effective search.\n\nSocial Schema (0): No social context is involved in this particular action.\n\nHabit (1): Resetting to a neutral head position before changing search direction is a common practice for comfort and balanced movement."
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (7): My head is significantly rotated left. Returning it towards neutral is crucial to prevent strain and maintain a natural appearance. This is the primary motivation for this action.\n\nInterest (2):  Locating BackSeat3 and other potential seats remains the goal, but it's secondary to the safety concern.  A more neutral head position will enable a more effective search.\n\nSocial Schema (0): No social context is involved in this particular action.\n\nHabit (1): Resetting to a neutral head position before changing search direction is a common practice for comfort and balance.  Since I've already performed this action multiple times recently, the Habit influence is minimal, but still present."
+    }
+   ]
+  }
+ ],
+ "multi": [
+  {
+   "scene": "Mall",
+   "agent": "Female Jacket",
+   "steps": [
+    {
+     "action": "Search right",
+     "explanation": "Safety (2): Maintaining awareness of the surroundings is important for safety in a public space like a mall. Exploring to the right helps broaden the understanding of the environment and identify potential hazards or exits.\nInterest (3): Exploring the unseen area to the right offers the potential to discover new and interesting elements of the mall.\nSocial Schema (2):  General awareness of the surroundings is expected in a social setting like a mall.\nInformation-Seeking (2): Turning to the right seeks new information about the mall environment that is not currently visible.\nHabit (1): General exploration of a new environment is a common human habit.",
+     "res": "Looking at Police",
+     "resExplanation": "The Police agent is moving and it is important to observe his actions.  The other agents appear to be static."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2): Maintaining awareness of the immediate surroundings, especially at the entrance, is crucial for safe navigation. Looking forward assesses potential obstacles or crowd movement.\nInterest (3): Observing the mall's interior layout and higher levels can reveal interesting architectural features or store displays, piquing curiosity.\nSocial Schema (2):  Looking ahead and generally observing one's surroundings is typical behavior in a public space, fulfilling social expectations.\nInformation-Seeking (2):  Looking forward can provide information about the mall's overall structure, store locations, and general layout.\nHabit (1):  Upon entering a new space, it's habitual to look ahead and get a general overview of the area.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (3): Scanning the left side of the entrance area ensures a comprehensive understanding of the immediate environment, identifying potential hazards or exits.  This is a priority before moving deeper into the mall.\nInterest (2):  Looking left might reveal interesting details of the mall's layout, stores, or architectural design not yet observed.\nSocial Schema (2):  A quick glance left before proceeding further into a new space is considered normal behavior.\nInformation-Seeking (2): Observing the left side can reveal useful information about the mall's layout and available facilities.\nHabit (1):  Checking different directions in a new environment is a common human habit related to orientation and navigation.",
+     "res": "Search left",
+     "resExplanation": "Santa is moving, but he doesn't appear to be a threat. My head is already turned significantly, so further adjustment risks exceeding the \"human\" limit. I will proceed with the scheduled action to Search forward while maintaining my current head position."
+    },
+    {
+     "action": "Looking at SM_Prop_Planter_Box_01",
+     "explanation": "Safety (2): Maintaining a safe distance while observing objects contributes to personal safety.\nInterest (3):  Examining specific objects like the planter boxes satisfies curiosity about the mall's environment and design choices.\nSocial Schema (2):  Observing objects in a public space is a common and accepted behavior.\nInformation-Seeking (2):  Looking at objects like the signs can offer detailed information.\nHabit (1): People tend to observe interesting details in their environment.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (3): Moving forward allows me to better assess the layout of the mall, identify potential obstacles, and navigate safely.  This is prioritized as the cognitive goal emphasizes a *safe* look at the mall.\nInterest (2): Proceeding into the mall allows me to discover new and interesting areas, shops, and displays, fulfilling the exploratory aspect of the goal.\nSocial Schema (2): Walking forward into a mall after entering is a common and expected behavior.\nInformation-Seeking (2): Moving forward allows me to gather more information about the mall's layout, the location of stores, and the overall atmosphere.\nHabit (1): Entering a new space naturally encourages forward movement to explore what lies ahead.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (3): Moving forward into the mall is crucial for a comprehensive safety assessment. This allows for a better understanding of the layout, identification of potential hazards or exits beyond the entrance, and evaluation of crowd density and movement.\nInterest (2):  Proceeding into the mall allows me to explore new areas, potentially discovering interesting shops, displays, or architectural features.\nSocial Schema (2):  Walking forward into a mall after entering is typical behavior.\nInformation-Seeking (2): Moving deeper into the mall provides information about the overall layout, the location of stores, and other facilities.\nHabit (1): Entering a space encourages forward movement to explore what's ahead.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Bld_Base_Pillar_01",
+     "explanation": "Safety (3): Understanding the structural elements of the mall, such as the pillars, contributes to a safer exploration by increasing awareness of the building's layout and potential supporting structures.\nInterest (1):  Observing the pillars provides insights into the mall's architectural design and construction.\nSocial Schema (2):  While directly staring at a pillar for an extended period might be considered unusual, briefly observing architectural elements is acceptable behavior within a public space.\nInformation-Seeking (3):  Examining a pillar will provide specific details about the mall's construction, contributing to a more comprehensive understanding of the environment.\nHabit (1):  People tend to observe their surroundings, including structural elements, in a new environment.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Prop_Ground_Trim_Thin_Corner_01",
+     "explanation": "Safety (3):  Examining the ground trim contributes to safety by identifying potential trip hazards or changes in elevation near the entrance.  This is a priority as the cognitive goal emphasizes a \"safe\" look.\nInterest (1): While not inherently exciting, understanding the layout of the entrance area can indirectly contribute to finding interesting things later.\nSocial Schema (2): Briefly glancing at the ground near the entrance is a common behavior, falling within acceptable social norms.\nInformation-Seeking (3):  Looking at the ground trim can offer information about the entrance area's layout and potential obstacles.\nHabit (1):  People often subconsciously scan the ground ahead for obstacles as part of natural navigation.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (3): Moving forward allows for a broader view of the mall's interior, crucial for identifying potential hazards, exits, and crowd dynamics, thus prioritizing the \"safe\" aspect of the cognitive goal.\nInterest (2):  Progressing into the mall promises the discovery of new and potentially interesting areas, shops, and displays.\nSocial Schema (2):  Walking forward into a mall after entering is typical behavior and aligns with social expectations.\nInformation-Seeking (2): Moving forward provides a more comprehensive understanding of the mall's layout, store locations, and overall atmosphere.\nHabit (1):  Entering and exploring a new space naturally involves forward movement.",
+     "res": "keep",
+     "resExplanation": ""
+    }
+   ]
+  },
+  {
+   "scene": "Mall",
+   "agent": "Female Coat",
+   "steps": [
+    {
+     "action": "Search right",
+     "explanation": "Safety (2):  Looking to the right expands my view of the environment, increasing awareness of potential hazards.\nInterest (2):  Exploring new areas is likely to reveal more interesting objects.\nSocial Schema (1):  General mall behavior includes looking around.\nInformation-Seeking (4):  This action is primarily driven by the need to gather more information about the mall.\nHabit (1): People tend to look around new environments.",
+     "res": "Looking at SM_Chr_Clerk_Female_01",
+     "resExplanation": "There are several agents visible in the scene.  \nThe female clerk at the kiosk is closest and appears \nto be interacting with another agent. \nThis warrants further observation."
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (2):  Scanning the left side of the mall will help identify potential hazards or obstacles in that direction.\nInterest (2): Exploring the left side might uncover interesting shops or features not yet seen.\nSocial Schema (1):  Looking around in a new environment is a common social behavior.\nInformation-Seeking (4):  Exploring left is primarily driven by the need to gather more visual information about the mall layout and its contents.\nHabit (1):  People habitually scan their surroundings in unfamiliar places.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2):  Looking forward will help me identify potential obstacles or hazards in my path and plan my navigation accordingly.\nInterest (2):  A broader view of the mall might reveal interesting features or areas that were previously obscured by the glass walls of the arcade.\nSocial Schema (1):  Moving forward and exploring is a typical behavior when navigating a public space like a mall.\nInformation-Seeking (4):  The primary reason for looking forward is to gather more information about the overall layout of the mall, which is crucial for achieving the cognitive goal.\nHabit (1):  People tend to explore forward in new environments to gain a better sense of direction and identify potential destinations.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2): Looking forward is crucial for safe navigation as it helps identify potential obstacles or hazards.\nInterest (2):  Looking forward allows me to explore further into the mall and discover new, potentially interesting areas.\nSocial Schema (1): Exploring a new environment by looking forward is typical behavior.\nInformation-Seeking (4): This is the primary driver. Looking forward will provide more visual information about the mall's layout and contents, crucial for understanding the environment and achieving the cognitive goal.\nHabit (1): People naturally explore forward when entering new spaces.",
+     "res": "Looking at Male_Hoodie",
+     "resExplanation": "The robot to the left is interesting and warrants further investigation, \nbut the man in the hoodie sitting by the fountain is closer and presents a more immediate opportunity for observation.  My head is already turned within a safe range."
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (2):  Ensuring the right side is clear before proceeding further into the mall is a safety precaution.\nInterest (2):  There might be interesting stores or details on the right side that were missed in the initial, limited scan.\nSocial Schema (1):  Briefly checking surroundings is common behavior in public spaces.\nInformation-Seeking (4): The primary reason is to gain a more complete understanding of the immediate environment before moving forward.\nHabit (1):  People often perform quick checks of their surroundings when navigating.",
+     "res": "Search right",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2):  Looking forward is paramount for safe navigation as it allows me to identify any potential obstacles or hazards in my direct path.\n\nInterest (2):  Moving forward allows me to explore deeper into the mall and potentially discover new and interesting areas, shops, or features. The view beyond the open doors suggests new areas to explore.\n\nSocial Schema (1):  Exploring a new environment by moving forward is typical behavior.\n\nInformation-Seeking (4):  This is the primary driver. Looking forward will provide more visual information about the mall's interior layout and contents, crucial for understanding the environment and achieving the cognitive goal of taking a safe look at the shopping mall.\n\nHabit (1):  People naturally explore forward when entering new spaces.",
+     "res": "Search forward",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (2):  Scanning the left side of the mall again will help identify potential hazards or obstacles in that direction, ensuring a more complete assessment of the immediate surroundings before proceeding.\nInterest (2):  Exploring the left side again might uncover interesting shops or features not yet seen or noticed in the previous left scan.\nSocial Schema (1):  Looking around in a new environment is a common social behavior.  Taking a moment to observe the surroundings is expected.\nInformation-Seeking (4):  This action is primarily driven by the need to gather more complete visual information about the immediate area outside the arcade before moving inside.\nHabit (1): People habitually scan their surroundings in unfamiliar places.",
+     "res": "keep",
+     "resExplanation": ""
+    }
+   ]
+  },
+  {
+   "scene": "Mall",
+   "agent": "Character BusinessWoman",
+   "steps": [
+    {
+     "action": "Search left",
+     "explanation": "Information-seeking is prioritized slightly higher because I need to gather more visual information about the mall environment. Safety is also important, ensuring I'm aware of my surroundings. Social schema, interest, and habit are given equal but lower scores as they are less critical in this specific step.",
+     "res": "Looking at SM_Chr_Santa_01",
+     "resExplanation": "The Santa Claus character is in the center of the image and \nseems to be interacting with other agents, which is interesting. \n I will look at him to see what's happening."
+    },
+    {
+     "action": "Looking at SM_Sign_Board_05",
+     "explanation": "Information-seeking is prioritized as I need to understand the signs and their potential meaning within the mall context. Safety is also important, so I'm keeping an eye on my surroundings. Social schema, interest, and habit are given lower weights as they are less crucial for this specific action.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Sign_Board_31",
+     "explanation": "Information-seeking is prioritized as I aim to understand the different types of signs present.  Safety is important as I want to be aware of my surroundings.  Interest plays a role as exploring the mall visually is inherently interesting. Social schema and habit are less critical in this specific action.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety is prioritized as I want to ensure a safe exploration of the mall. Interest drives the exploration to discover new aspects of the environment. Information-seeking helps me understand the layout and features of the mall. Social schema and habit are less relevant for this specific action.",
+     "res": "Search right",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety is prioritized (3 points) as I need to be aware of potential hazards or obstacles on the left side of the entrance. Information-seeking is also important (3 points) as exploring the left side will likely provide new information about the mall.  Interest (2 points) motivates exploring the unknown area. Social schema (1 point) plays a minor role as I want to behave like a typical mall visitor who observes their surroundings. Habit (1 point) has minimal influence here.",
+     "res": "Search left",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Sign_Board_05",
+     "explanation": "My primary focus is on safety (3 points) and information-seeking (3 points).  The signboard (SM_Sign_Board_05) could provide crucial information for navigating the mall safely and efficiently.  Interest (2 points) is also a factor, as understanding the mall's offerings could guide further exploration.  Social schema (1 point) plays a minor role, as being aware of signage is expected behavior in a public space.  Habit (1 point) is also a minor factor, as checking signs for information is a common routine in unfamiliar environments.  I've already scanned my immediate vicinity, making examining a specific object a more effective next step for achieving my goal.",
+     "res": "Looking at SM_Chr_Santa_01",
+     "resExplanation": "SM_Chr_Santa_01 is in the direct line of sight and appears to be engaging \nin an unusual activity (dancing or waving arms).  \nThis warrants further observation."
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (3 points) is prioritized, as identifying potential hazards or security features (like the presence of security personnel) is crucial for a \"safe look.\"  Interest (3 points) is also important for motivating exploration and discovering interesting areas.  Information-seeking (2 points) remains relevant, as I'm still gathering data about the mall's layout and features. Social Schema (1 point) and Habit (1 point) play minor roles, as there's no specific social interaction or routine driving this action. Searching right offers the best opportunity to gain a wider view of the mall's interior and fulfill these priorities.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (3 points) remains a priority. Searching left could reveal exits, security features, or potential hazards. Information-seeking (3 points) is also crucial as I continue to build a mental map of the mall. Interest (2 points) motivates exploration and the discovery of new areas. Social Schema (1 point) influences my decision to conduct a thorough scan of the environment, which is typical behavior in unfamiliar places. Habit (1 point) encourages continued exploration to complete my understanding of the mall.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety is paramount, so I will proceed cautiously while moving forward.  Interest motivates me to see what lies further in the mall, and information-seeking helps me build a better understanding of the environment. Social schema dictates appropriate behavior within the mall, while habit encourages continued exploration.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Sign_Board_31",
+     "explanation": "Information-seeking (4 points) is prioritized as SM_Sign_Board_31 could be a directory or map, crucial for understanding the mall's layout and services. Safety (2 points) remains relevant, as knowing the locations of exits and security features is important. Interest (2 points) is also a factor, as the signboard may highlight interesting stores or areas. Social Schema (1 point) plays a minor role, as reading informational signs is expected behavior. Habit (1 point) reflects the routine of checking for information in new environments.",
+     "res": "keep",
+     "resExplanation": ""
+    }
+   ]
+  },
+  {
+   "scene": "Mall",
+   "agent": "BusinessMan Shirt",
+   "steps": [
+    {
+     "action": "Search right",
+     "explanation": "Safety is prioritized (2 points) by initially scanning the environment for potential obstacles or hazards before moving closer to the mall. Interest (2 points) motivates exploration to discover what the mall has to offer. Social Schema (1 point) plays a minor role as there are no people present. Information-seeking (4 points) is the primary driver as I need to gather more visual details about the mall's layout and offerings. Habit (1 point) influences the standard approach of visually exploring a new location.  I'm choosing to \"Search right\" to expand my view of the shopping mall entrance and surroundings. This balanced exploration approach avoids fixating on a single object and ensures a comprehensive understanding of the environment.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Prop_Mall_Map_01",
+     "explanation": "Safety (2 points): Maintaining awareness of my surroundings is still a priority, even when looking at the map.\nInterest (1 point):  The novelty of the multiple Santas is intriguing but secondary to gaining information about the mall.\nSocial Schema (1 point): General social awareness of other shoppers remains a factor.\nInformation-Seeking (5 points): Examining the mall map will provide crucial details for navigating and exploring efficiently.\nHabit (1 point):  Checking a map in a new environment is a habitual action for orientation.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (2 points):  Remaining aware of the moving Santas and other potential obstacles is crucial for safe navigation.\nInterest (2 points): Observing the Santas and exploring the produce/flower stands adds an element of curiosity and discovery.\nSocial Schema (2 points):  Understanding how people (Santas and potential shoppers) move and interact within the mall helps in navigating appropriately.\nInformation-Seeking (3 points):  Expanding my field of view will provide more visual information about the layout, available amenities, and general atmosphere of the mall.\nHabit (1 point):  A general tendency to explore new environments systematically.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search up",
+     "explanation": "Safety (2 points): Looking up allows me to check for any overhead obstacles or potential hazards.\nInterest (2 points):  A higher vantage point might reveal interesting architectural features or displays within the mall.\nSocial Schema (1 point): Maintaining general spatial awareness is relevant to social norms of not bumping into things or people.\nInformation-Seeking (4 points):  This action is primarily driven by the need to gain a more comprehensive view of the mall's interior and layout.\nHabit (1 point):  Looking around in a new environment is a common habit to get oriented.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (3 points): Moving forward allows me to cautiously enter the mall and assess the immediate environment for any potential hazards.\nInterest (2 points):  Progressing into the mall satisfies the curiosity to discover what's inside and what the mall has to offer.\nSocial Schema (1 point): Maintaining spatial awareness as I move forward is relevant for navigating a public space.\nInformation-Seeking (3 points): Moving forward provides a more direct view of the mall's interior, offering more information than simply looking left, right, or up again.\nHabit (1 point):  Exploring a new environment by moving forward is a common and natural human behavior.",
+     "res": "Looking at SM_Chr_Santa_01",
+     "resExplanation": "SM_Chr_Santa_01 is unexpectedly present in this setting and warrants further investigation.  This action is within safe head rotation limits."
+    },
+    {
+     "action": "Looking at Male_Hoodie",
+     "explanation": "Safety (1 point): Maintaining general awareness of surroundings is important even when focusing on a specific individual.\nInterest (1 point): Observing individuals in the environment adds to the overall experience and understanding of the mall's atmosphere.\nSocial Schema (4 points): Acknowledging the presence of others, even through observation, is a key aspect of social behavior in a public space. Focusing on the individual with the hoodie aligns with the social schema of observing and understanding other people in the environment.\nInformation-Seeking (3 points): Observing details about the individual, such as their attire, can offer insights into the mall's clientele and overall atmosphere.\nHabit (1 point): Observing people in a new environment is a common human behavior.",
+     "res": "Looking at SM_Chr_Santa_02",
+     "resExplanation": "SM_Chr_Santa_01 is exhibiting unexpected behavior (dancing), warranting further observation.  This action requires minimal head movement."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2 points): Maintaining spatial awareness is crucial, especially as I've moved into the mall and may encounter more people or obstacles.\nInterest (2 points): Getting a wider perspective will reveal more points of interest within the mall, piquing curiosity.\nSocial Schema (1 point): General social awareness is maintained as I navigate the shared space.\nInformation-Seeking (4 points):  A wider view is crucial for understanding the layout and identifying specific areas of the mall I may want to explore further. This action aims to maximize information gathering about the overall environment.\nHabit (1 point):  Scanning the environment is a habitual action to gain situational awareness.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2 points): Maintaining spatial awareness as I move forward is essential for navigating safely within the mall.\nInterest (2 points):  Progressing further into the mall fuels curiosity and allows for the discovery of new areas and attractions.\nSocial Schema (1 point):  General social awareness is maintained as I move through the shared space.\nInformation-Seeking (4 points): Moving forward offers the best opportunity to gather new visual information about the mall's layout, stores, and overall atmosphere.\nHabit (1 point):  Exploring a new environment by moving forward is a natural human tendency.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2 points): Maintaining spatial awareness is crucial as I move further into a potentially crowded environment.\nInterest (3 points): Moving forward is driven by curiosity and the desire to explore deeper into the mall and uncover new areas of interest.\nSocial Schema (1 point): General social awareness is maintained as I navigate the shared space.\nInformation-Seeking (3 points):  Advancing into the mall will reveal new visual information and expand my understanding of the environment.\nHabit (1 point):  Exploring a new environment by moving forward is a natural human tendency.",
+     "res": "keep",
+     "resExplanation": ""
+    }
+   ]
+  },
+  {
+   "scene": "Mall",
+   "agent": "Male Hoodie",
+   "steps": [
+    {
+     "action": "Search left",
+     "explanation": "Safety is paramount (3 points) as I'm in a public space and need to be aware of my surroundings.  Interest (2 points) drives me to see what the mall looks like. Social Schema (2 points) encourages me to behave like a typical person entering a mall, which includes scanning the surroundings. Information-Seeking (2 points) is crucial to understand the mall's layout and identify points of interest. Habit (1 point) plays a minor role here as I'm adapting to a new environment. Looking left is chosen as a balanced exploration strategy, as I haven't looked in that direction yet.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (2 points): Maintaining awareness of my surroundings is important, even in a relatively safe environment like a mall.\nInterest (2 points):  Exploring the mall to see what it offers is part of my goal.\nSocial Schema (2 points):  Scanning the environment is typical behavior in a new location.\nInformation-Seeking (3 points):  Gaining a broader view of the mall is prioritized to understand its layout and offerings.\nHabit (1 point): General exploration habits influence the decision to look around.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (2 points):  Moving forward carefully allows me to assess the safety of the path ahead.\nInterest (3 points): Looking into the shop satisfies my curiosity about its contents and purpose.\nSocial Schema (2 points):  Entering a shop after observing the entrance is common behavior.\nInformation-Seeking (2 points):  A forward view provides more information about the shop's layout and offerings.\nHabit (1 point):  The habitual tendency to explore new environments drives this action.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (3 points):  Moving forward carefully allows me to assess the safety of the path ahead and observe the partially transparent figure more closely.\nInterest (2 points):  Exploring the mall further satisfies my curiosity about its contents and layout.\nSocial Schema (2 points):  Moving forward into a mall after observing the entrance is common behavior.\nInformation-Seeking (2 points):  A forward view provides more information about the shop's interior and the mall's layout.\nHabit (1 point):  The habitual tendency to explore new environments drives this action.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search up",
+     "explanation": "Safety (2 points): Looking up is a safe action as it doesn't involve physical movement.\nInterest (2 points): Observing the area above me could reveal interesting architectural details or decorations.\nSocial Schema (2 points): Looking around in a new environment is a normal human behavior.\nInformation-Seeking (3 points):  This action allows me to gather more visual information about the mall, specifically the area I haven't observed yet.\nHabit (1 point): General exploration habits contribute to this decision.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (3 points):  Scanning my surroundings is crucial for safety in a public space like a mall. Looking left expands my view and increases my awareness of potential hazards or obstacles.\nInterest (2 points): Looking left could reveal new and interesting areas of the mall, sparking my curiosity and encouraging further exploration.\nSocial Schema (2 points):  Looking around and observing the environment is normal behavior in a new place like a mall.\nInformation-Seeking (2 points):  Looking left will provide me with more information about the mall's layout, stores, and overall environment beyond the immediate vicinity of the arcade.\nHabit (1 point):  The habitual tendency to explore and gain a broader understanding of a new space contributes to this decision.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (2 points):  A slight turn to the right is a safe action in this context, allowing me to maintain awareness of my current location while expanding my view.\nInterest (2 points): Shifting my view could reveal new and interesting details previously hidden by the pillar, piquing my curiosity about the mall's offerings.\nSocial Schema (2 points):  Looking around in a new environment is typical human behavior and helps me blend in with other mall visitors.\nInformation-Seeking (3 points): The primary reason for this action is to gain a clearer view of the mall beyond the obstructing pillar. This improves my understanding of the mall's layout and potential points of interest.\nHabit (1 point):  The general habit of exploring and gaining a broader view of new environments influences this decision.",
+     "res": "Looking at SM_Chr_Santa_01",
+     "resExplanation": "SM_Chr_Santa_01 is moving and seems to be the most interesting agent present in the scene.  The movement warrants further investigation."
+    }
+   ]
+  },
+  {
+   "scene": "Mall",
+   "agent": "Police",
+   "steps": [
+    {
+     "action": "Looking at SM_Prop_Arcade_Machine_Basic_01",
+     "explanation": "Safety is prioritized (3 points) as the primary goal of a police officer is to ensure public safety.  Interest (2 points) is given to the arcade machines as they are a new element in the scene and could be relevant to patrol duties. Social Schema (2 points) encourages visibility and presence in public areas, which looking at the arcade machines facilitates. Information-Seeking (2 points) is assigned as observing the arcade machines will provide details about their condition and the surrounding area. Habit (1 point) represents routine patrol activities.  I chose \"Looking at SM_Prop_Arcade_Machine_Basic_01\" because it allows me to directly assess the situation around the arcade machines and fulfills my patrol duties.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Prop_Shop_Desk_01",
+     "explanation": "Safety (3) is paramount as a police officer. Checking the shop desks could reveal potential security vulnerabilities or suspicious activity. Information-Seeking (3) is high as interacting with the desks might provide valuable information about the arcade and its patrons. Social Schema (2) is relevant, as approaching desks is a normal behavior in a business setting.  Interest (1) is present as the desks might offer clues about the arcade's operation. Habit (1) reflects standard patrol procedures of checking in with businesses.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (3): Maintaining a broad visual awareness of the environment is crucial for safety, allowing me to spot potential threats or incidents quickly. Interest (2): Exploring the unseen areas of the arcade satisfies my curiosity about the full layout and what other objects might be present. Social Schema (2): Patrolling officers are expected to be observant and aware of their surroundings, which looking around achieves.  Information-Seeking (2): Searching left will provide additional visual information about the arcade, potentially revealing more details relevant to my patrol.  Habit (1): Regularly scanning the environment is a habitual action for patrol officers.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (3): Ensuring the safety of the arcade patrons and identifying potential hazards remains my top priority. Searching left expands my field of vision, allowing me to better assess the overall security of the location. Interest (2):  I'm curious to see what other games or features are present in this section of the arcade. Social Schema (2): As a patrolling officer, I'm expected to be observant and thoroughly check the premises.  Information-Seeking (2):  By searching left, I gather more information about the arcade's layout and contents.  Habit (1): Systematically scanning my surroundings is a habitual part of patrol duty.",
+     "res": "keep",
+     "resExplanation": ""
+    }
+   ]
+  },
+  {
+   "scene": "Crossing",
+   "agent": "Female Jacket",
+   "steps": [
+    {
+     "action": "Search left",
+     "explanation": "Safety is paramount (5 points) as I need to ensure no vehicles are approaching before crossing.  Social Schema (2 points) dictates checking for traffic before crossing, adhering to pedestrian norms. Information-Seeking (3 points) is crucial as I need to gather information about oncoming traffic. Interest and Habit are not relevant in this immediate situation. I am choosing to \"Search left\" because it aligns with safe road crossing practices and fulfills my need to assess oncoming traffic.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (5 points) remains paramount as I need to ensure a safe crossing. Social Schema (2 points) supports looking both ways before crossing a street.  Information-Seeking (3 points) is crucial to gain a complete picture of oncoming traffic. I am choosing to \"Search right\" to ensure no vehicles are approaching from that direction before I step onto the crosswalk.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (8 points) is the primary driver for this action, as I need to ensure a safe crossing and avoid potential collisions. Social Schema (2 points) also plays a role as attentive crossing behavior is expected. I have already performed \"Search Left\" and \"Search Right\" twice, and now choose \"Search forward\" to refocus on the crosswalk itself immediately before crossing, maximizing safety.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (8 points) is paramount as I want to ensure no vehicles or other obstacles are approaching from the left before stepping onto the crosswalk. Social Schema (2 points) reinforces the importance of checking for traffic. While I have looked left before, circumstances can change rapidly near a crosswalk, and a final check maximizes safety.  Information-Seeking, Interest, and Habit are not the primary motivators for this specific check.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (7 points) is paramount.  Re-centering my vision (\"Search forward\") allows me to focus on the crosswalk and look for a walk signal or any sudden changes in traffic.  Social Schema (2 points) supports this as pedestrians should be aware of their surroundings and follow traffic signals. Information-Seeking (1 point) motivates the action as I need to assess the crosswalk's status. Interest and Habit are not relevant in this focused safety check.  This action prioritizes safety by ensuring a clear view of the crossing area before proceeding.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (8 points) is paramount as a final check of the crosswalk immediately before crossing minimizes the risk of accidents.  Social Schema (2 points) supports attentive crossing behavior. Information-Seeking, Interest, and Habit are less relevant for this focused safety check. This action prioritizes a clear view of the crossing area before proceeding.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Veh_Car_Taxi_03",
+     "explanation": "Safety is the primary concern (7 points), as crossing the road safely is paramount.  Adhering to pedestrian norms (Social Schema - 1 point) dictates checking for traffic. Information-Seeking (2 points) is important to gauge the taxi's speed and trajectory. Interest and Habit are not relevant in this immediate situation.  I choose to look at the taxi (SM_Veh_Car_Taxi_03) because understanding its behavior is crucial for safe crossing. Although the crosswalk is in the object list, looking at the taxi provides more relevant information for achieving my goal.",
+     "res": "Search right",
+     "resExplanation": "There is no immediate threat visible.  The pedestrian in the crosswalk is not moving fast enough to warrant concern. To explore further, I will search to the right, as there are parked cars and buildings in that direction which may reveal further points of interest."
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (7 points) remains the primary concern. I want to avoid any potential collisions. Social Schema (1 point) reinforces responsible pedestrian behavior. Information-Seeking (2 points) prompts me to expand my understanding of the traffic situation beyond just the taxi. Although I've looked at the taxi twice before, its continued presence near the crosswalk requires ongoing monitoring.  I choose to \"Search right\" because the red car entered the parking area on the right, and gaining more information about its position and potential movements will further enhance my safety before crossing. This balances previous focus on the taxi with gaining broader situational awareness.",
+     "res": "Looking at Female_Jacket",
+     "resExplanation": "The female agent in the green jacket is walking towards me.  I need to observe her to assess if she poses any threat or presents an opportunity for interaction."
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (7 points) remains the top priority as I prepare to cross.  Social Schema (2 points) dictates checking for traffic in both directions before crossing. Information-Seeking (1 point) drives the need to confirm the absence of oncoming traffic from the left. Interest and Habit are not relevant in this immediate situation.",
+     "res": "Looking at Female_Jacket",
+     "resExplanation": "The female agent in the green jacket is approaching.  It's important to continue observing her to assess any potential threat or opportunity for interaction.  The scheduled action to search left can be performed later."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (7 points) is paramount before stepping onto the crosswalk. Social Schema (2 points) encourages a final check before proceeding. Information-Seeking (1 point) motivates this last look to ensure no new elements have entered the scene. Interest and Habit are not relevant in this immediate, safety-critical decision. I choose \"Search forward\" to get a final, updated view of the crosswalk itself, ensuring safety. This is distinct from the previous left/right searches which focused on broader traffic.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (8 points) is paramount as I'm about to step into the road.  Social Schema (2 points) reinforces responsible pedestrian behavior by confirming the situation immediately before crossing.  Information-Seeking, Interest, and Habit are not as critical at this precise moment. I choose \"Search forward\" because it provides the most direct, up-to-date assessment of the crosswalk's safety, which is my immediate concern before moving. This differs from previous forward searches as it's now directly linked to the act of stepping onto the road, requiring an immediate verification.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Safety (8 points) is the absolute priority as I begin to cross the road.  Social Schema (2 points) dictates proceeding with the crossing after confirming it's safe. Information-Seeking, Interest, and Habit are not relevant at this specific moment of initiating the crossing action. \"Search forward\" is chosen to maintain visual contact with the crosswalk and immediate surroundings as I step onto the road, ensuring I react to any unforeseen changes.",
+     "res": "keep",
+     "resExplanation": ""
+    }
+   ]
+  },
+  {
+   "scene": "Crossing",
+   "agent": "Character Male Hoodie",
+   "steps": [
+    {
+     "action": "Looking at Character_SchoolBoy_01",
+     "explanation": "The primary focus is on Social Schema (4 points) as observing people in a social setting is a common human behavior. Interest (3 points) is also a factor as human curiosity naturally draws attention to other individuals.  Habit (1 point) reflects the ingrained tendency to observe surroundings. Safety (1 point) is minimally addressed by maintaining awareness of the environment. Information-Seeking (1 point) is also present as observing the schoolboy provides some information about the scene's context.",
+     "res": "Looking at SM_Chr_Gym_Male_01",
+     "resExplanation": "The agent SM_Chr_Gym_Male_01 is walking towards me from the distance. I need to observe him to determine if he poses any threat or if he is simply passing by."
+    },
+    {
+     "action": "Looking at SM_Prop_Cafe_Table_Folding_01",
+     "explanation": "Habit (5 points) is the primary driver as looking forward is a default, comfortable position. Safety (2 points) is a factor in avoiding unnatural head movements. Interest (1 point), Social Schema (1 point) and Information-Seeking (1 point) are acknowledged but less prominent as the focus is on simply looking forward. Looking at a table straight ahead aids in grounding perception.",
+     "res": "Looking at Character_BusinessMan_Suit",
+     "resExplanation": "The businessman is walking close by and it's important to monitor his movements for safety."
+    },
+    {
+     "action": "Search forward",
+     "explanation": "Habit (3 points) is the primary driver, as looking forward is a natural and comfortable posture.  Safety (2 points) is also a factor, ensuring no excessive or unnatural head movements. Interest (2 points) and Information-Seeking (2 points) are present due to the potential for new stimuli appearing as the gaze shifts slightly forward. Social Schema (1 point) is minimally addressed by maintaining a generally forward-facing posture, typical in public spaces.",
+     "res": "Looking at Character_BusinessMan_Suit",
+     "resExplanation": "The businessman is approaching, and it is important to continue monitoring his movements for safety reasons."
+    },
+    {
+     "action": "Looking at SM_Env_Ground_Panel_01",
+     "explanation": "Safety: Maintaining a forward gaze contributes to safe navigation by avoiding abrupt head movements.\nInterest: Observing the ground panel provides a small degree of visual interest by focusing on a specific detail in the environment.\nSocial Schema: Looking at the ground panels occasionally is a less conspicuous action compared to prolonged focus on the orange car, which aligns better with expected behavior in a public parking lot.\nInformation-Seeking: Focusing on a ground panel can reveal small details about the ground surface and surrounding area, satisfying a small degree of information-seeking behavior.\nHabit: Looking at various elements straight ahead is part of the natural visual scanning behavior humans perform when navigating an environment.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Sign_Board_21 (6)",
+     "explanation": "Safety (2 points): Maintaining a forward gaze with minor adjustments ensures safe navigation and avoids sudden head movements.\nInterest (2 points): Examining the closer signboard adds a degree of interest as it might reveal details previously obscured by the building's support beam.\nSocial Schema (2 points): Briefly observing nearby signage is a socially acceptable behavior, especially when approaching a building.\nInformation-Seeking (3 points): The primary motivation is to glean more information from the sign, potentially identifying the building's purpose or displaying relevant notices.\nHabit (1 point):  Observing signage while navigating is a common human habit.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Prop_Planter_Vase_01",
+     "explanation": "Safety (2 points): Choosing the planter vase minimizes head movement, contributing to a natural and safe posture.\nInterest (3 points): Observing the planter vase satisfies natural curiosity about the environment.\nSocial Schema (2 points): Briefly glancing at elements in the immediate surroundings is a common behavior in public spaces.\nInformation-Seeking (2 points): Examining the planter vase provides a small amount of visual information about the environment.\nHabit (1 point): Observing objects within the forward visual field is a natural part of human visual behavior.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Bld_Base_Wall_Door_01",
+     "explanation": "Safety (2 points): Looking at the door is a safe action that maintains a natural head position.\nInterest (2 points): The door is a point of interest as the likely entrance to the building.\nSocial Schema (3 points): Looking at the entrance of a building is a common and expected behavior, especially when approaching it.\nInformation-Seeking (2 points): Observing the door may reveal information about the building's function or business within.\nHabit (1 point):  Looking towards the main entrance of a building is habitual when approaching it.",
+     "res": "keep",
+     "resExplanation": ""
+    }
+   ]
+  },
+  {
+   "scene": "Crossing",
+   "agent": "Character Male Jacket",
+   "steps": [
+    {
+     "action": "Looking at SM_Chr_Gym_Male_01",
+     "explanation": "Safety is paramount (5 points) as I need to ensure the crosswalk is clear before crossing. Social Schema (2 points) encourages checking for pedestrians before entering a crosswalk. Information-Seeking (3 points) is important to confirm the gym male's position and movement.  I am actively focusing on crossing the crosswalk, not general exploration or habits.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Chr_Gym_Female_01",
+     "explanation": "Safety (4 points): Ensuring both pedestrians near the crosswalk are stationary is crucial for a safe crossing.\nSocial Schema (3 points): Being aware of other pedestrians before entering a crosswalk is expected behavior.\nInformation-Seeking (3 points):  I need to confirm SM_Chr_Gym_Female_01's intention before deciding to cross.\nInterest (0 points): No interesting elements are currently relevant to the crossing task.\nHabit (0 points):  The current focus overrides habitual actions.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (5 points):  A final look left is crucial for safety, ensuring no approaching vehicles or cyclists are missed.\nInterest (0 points):  There are no interesting elements relevant to crossing safely at this time.\nSocial Schema (3 points):  Looking both ways before crossing is a learned social norm and reinforces responsible pedestrian behavior.\nInformation-Seeking (2 points): Briefly glancing left provides final visual information confirming the road is clear to cross.\nHabit (0 points): Habitual scanning would be part of an ongoing exploration task, not the immediate focus of crossing.",
+     "res": "Looking at Character_BusinessMan_Suit",
+     "resExplanation": "The businessman is walking in my direction and appears to be a potential interaction.  I will adjust my gaze to observe him more closely."
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (7 points): A final, thorough scan to the left before entering the crosswalk is paramount to avoid potential collisions with fast-moving vehicles or cyclists that might have entered the visual field since the last check.  Even though I've looked left twice already, the potential consequences of missing a vehicle warrant this additional precaution.\n\nSocial Schema (2 points):  Looking left, then right, then left again before crossing a road reinforces responsible pedestrian behavior.\n\nInformation-Seeking (1 point):  This final scan provides the last bit of visual information needed to make the decision to cross safely.\n\nInterest (0 points): No interesting elements are relevant to the core goal of safely crossing the crosswalk.\n\nHabit (0 points): Habitual actions are not the priority during focused goal-directed activity.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search left",
+     "explanation": "Safety (8 points):  A final, thorough scan to the left is critical for detecting any fast-approaching vehicles or cyclists that may have entered the scene since the last check. The potential severity of an accident outweighs the minor time cost of this extra precaution.\n\nSocial Schema (1 point):  While looking left, right, and left again is standard practice, the emphasis here is on the safety aspect rather than the social norm.\n\nInformation-Seeking (1 point):  This final scan provides the last piece of visual data required to make the crossing decision.\n\nInterest (0 points): No interesting elements are relevant to the core goal of safely crossing the crosswalk.\n\nHabit (0 points): Habitual actions are not the priority during focused goal-directed activity like crossing a road.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Looking at SM_Bld_Base_Pillar_Metal_02",
+     "explanation": "Safety (4 points): Ensuring the area around the crosswalk is clear, including confirming the positions of objects near it, is crucial for safe crossing.\nInterest (0 points): No interesting elements are currently relevant to the primary task of crossing safely.\nSocial Schema (2 points): Being mindful of the overall environment near the crosswalk, even stationary objects, promotes responsible pedestrian behavior.\nInformation-Seeking (4 points):  A quick check of the metal pillars can reveal additional information about the immediate crosswalk area and potential obstructions or other pedestrians.\nHabit (0 points): Habitual actions are not the primary focus when engaged in a focused goal-directed activity.",
+     "res": "keep",
+     "resExplanation": ""
+    },
+    {
+     "action": "Search right",
+     "explanation": "Safety (7 points): Checking for traffic from the right is critical for safe crossing, as vehicles or cyclists could be approaching from that direction.\nInterest (0 points):  There are no interesting elements relevant to crossing safely at this time.\nSocial Schema (2 points):  Looking both ways before crossing is a learned social norm.\nInformation-Seeking (1 point): Looking right will provide essential visual information about the traffic situation on that side of the road.\nHabit (0 points): Habitual actions are not the priority during focused goal-directed activity like crossing a road.",
+     "res": "keep",
+     "resExplanation": ""
+    }
+   ]
+  }
+ ]
+}

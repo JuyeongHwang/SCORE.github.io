@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SCORE: Symbolic Cognitive Reasoning for Embodied Head Rotation</title>
+  <meta name="description" content="SCORE: How does a virtual agent decide where to look? Symbolic cognitive reasoning for embodied head rotation. SIGGRAPH Asia 2025.">
+  <meta property="og:title" content="SCORE: How Does a Virtual Agent Decide Where to Look?">
+  <meta property="og:description" content="A VLM–LLM framework that predicts not only where a virtual agent looks, but why. SIGGRAPH Asia 2025.">
+  <meta property="og:image" content="static/images/paper/SCORE_Teaser05.jpg">
+  <link rel="icon" href="static/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/score.css?v=4">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="brand" href="#top">SCORE</a>
+    <a class="nav" href="#abstract">Abstract</a>
+    <a class="nav" href="#study">User Study</a>
+    <a class="nav" href="#method">Method</a>
+    <a class="nav" href="#replay">Interactive Replay</a>
+    <a class="nav" href="#headrot">Trajectories</a>
+    <a class="nav" href="#outputs">Model Outputs</a>
+    <a class="nav" href="#ollama">Run Locally</a>
+    <a class="nav" href="#results">Results</a>
+    <a class="nav" href="#bibtex">BibTeX</a>
+    <span class="spacer"></span>
+    <button class="theme-btn" id="theme-btn" aria-label="Toggle color theme">Theme</button>
+  </div>
+</nav>
+
+<header class="hero wrap" id="top">
+  <div class="venue">SIGGRAPH Asia 2025 · Conference Papers</div>
+  <h1>How Does a Virtual Agent Decide Where to Look?
+    <span class="sub">Symbolic Cognitive Reasoning for Embodied Head Rotation</span></h1>
+  <div class="authors">
+    <span>Juyeong Hwang<sup>1*</sup></span>
+    <span>Seong-Eun Hong<sup>1*</sup></span>
+    <span>JaeYoung Seon<sup>2</sup></span>
+    <span>HyeongYeop Kang<sup>1†</sup></span>
+  </div>
+  <div class="affil"><sup>1</sup>IIIXR Lab, Korea University &nbsp;·&nbsp; <sup>2</sup>IIIXR Lab, Kyung Hee University</div>
+  <div class="affil">* Equal contribution &nbsp;·&nbsp; † Corresponding author</div>
+  <div class="buttons">
+    <a class="btn disabled" href="#" title="Link will be added after the ACM DL release">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>Paper</a>
+    <a class="btn ghost disabled" href="#" title="Coming soon">Supplementary</a>
+    <a class="btn ghost" href="https://github.com/JuyeongHwang/SIGGRAPHAsia2025OfficialCode_SCORE" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>Code</a>
+    <a class="btn ghost" href="#replay">Interactive Replay</a>
+    <a class="btn ghost" href="#ollama">Run with Qwen (Ollama)</a>
+  </div>
+  <figure class="teaser">
+    <img src="static/images/paper/SCORE_Teaser05.jpg" alt="SCORE agents in a city scene, each annotated with an action, its field of view and the reason for looking there">
+    <figcaption>SCORE agents decide <b>where</b> to look (action) and <b>why</b> (reason) from what they see (field of view): checking for oncoming cars, scanning for empty seats, glancing at the sky out of habit.</figcaption>
+  </figure>
+</header>
+
+<main>
+
+<section id="abstract">
+  <div class="wrap">
+    <div class="eyebrow">Abstract</div>
+    <h2>Predicting not only where to look, but why</h2>
+    <p class="lead">Natural head rotation is critical for believable embodied virtual agents, yet this micro-level behavior remains largely underexplored. While head-rotation prediction algorithms could, in principle, reproduce this behavior, they typically focus on visually salient stimuli and overlook the cognitive motives that guide head rotation. This yields agents that look at conspicuous objects while overlooking obstacles or task-relevant cues, diminishing realism in a virtual environment.</p>
+    <p class="lead">We introduce <b>SCORE</b>, a <b>S</b>ymbolic <b>CO</b>gnitive <b>R</b>easoning framework for <b>E</b>mbodied Head Rotation, a data-agnostic framework that produces context-aware head movements without task-specific training or hand-tuned heuristics. A controlled VR study (<i>N</i>=20) identifies five motivational drivers of human head movements: <i>Interest</i>, <i>Information Seeking</i>, <i>Safety</i>, <i>Social Schema</i>, and <i>Habit</i>. SCORE encodes these drivers as symbolic predicates, perceives the scene with a Vision–Language Model (VLM), and plans head poses with a Large Language Model (LLM). The framework employs a hybrid workflow: the VLM–LLM reasoning is executed offline, after which a lightweight FastVLM performs online validation to suppress hallucinations while maintaining responsiveness to scene dynamics. The result is an agent that predicts not only <i>where</i> to look but also <i>why</i>, generalizing to unseen scenes and multi-agent crowds while retaining behavioral plausibility.</p>
+  </div>
+</section>
+
+<section id="study">
+  <div class="wrap">
+    <div class="eyebrow">User study</div>
+    <h2>Why do people turn their heads?</h2>
+    <p>We recorded head trajectories in VR together with each participant's own explanation for every head turn. These data define the five motivational drivers SCORE reasons over, and serve as the <i>Human</i> reference in all evaluations.</p>
+    <div class="stats">
+      <div class="stat"><b>20</b><span>participants (11 M / 9 F, 24.3 ± 2.6 yrs)</span></div>
+      <div class="stat"><b>5</b><span>environments: bus, café, crosswalk, mall, street</span></div>
+      <div class="stat"><b>2</b><span>conditions: MDC (minimal distraction) and APC (attention-provoking)</span></div>
+      <div class="stat"><b>200</b><span>annotated explanations of head turns</span></div>
+    </div>
+    <div class="grid2">
+      <figure>
+        <div class="figure-card"><img src="static/images/paper/SceneExample2.jpg" alt="APC versions of the scenes with a Santa, a traffic accident, and arguing people highlighted"></div>
+        <figcaption>APC scenes add distractors (red boxes): a Santa, a traffic accident, and arguing people. MDC scenes share the same layout without them.</figcaption>
+      </figure>
+      <div>
+        <h3 style="margin-top:0">Protocol</h3>
+        <p>Each participant performed ten 60-second trials (5 environments × 2 conditions, randomized order) wearing a Quest 2, with a scenario goal per environment, e.g. <i>Bus</i>: find and sit in an empty seat at the back; <i>Crosswalk</i>: cross safely to the other side. Afterwards, participants reviewed their egocentric footage and explained the motive for every head turn.</p>
+        <p>Turns were split into <i>confirmation</i> (small checks of peripheral cues) and <i>exploration</i> turns (larger reorientations), and the explanations were coded starting from <i>Safety</i>, <i>Interest</i> and <i>Information Seeking</i>. Two recurring behaviours did not fit: surveying the flow of pedestrians, and habitually glancing at the sky. They became <i>Social Schema</i> and <i>Habit</i>.</p>
+      </div>
+    </div>
+    <h3>Five motivational drivers</h3>
+    <div class="drivers">
+      <div class="driver" style="--c: var(--drv-interest)"><h4>Interest</h4><p>Curiosity about something novel or atypical, like a Santa on the bus.</p></div>
+      <div class="driver" style="--c: var(--drv-info)"><h4>Information seeking</h4><p>Acquiring task details: signs, empty seats, the route ahead.</p></div>
+      <div class="driver" style="--c: var(--drv-safety)"><h4>Safety</h4><p>Minimizing risk: oncoming cars, near collisions, traffic lights.</p></div>
+      <div class="driver" style="--c: var(--drv-social)"><h4>Social schema</h4><p>Following social norms, e.g. reading the flow of pedestrians.</p></div>
+      <div class="driver" style="--c: var(--drv-habit)"><h4>Habit</h4><p>Personal routines, e.g. looking forward or up at the sky while walking.</p></div>
+    </div>
+    <figure style="margin-top:22px">
+      <div class="figure-card" style="max-width:720px;margin:0 auto"><img src="static/images/paper/Human_Reasoning.jpg" alt="Distribution of self-reported head-movement rationales per scenario"></div>
+      <figcaption style="text-align:center">Categorized distribution of participants' self-reported rationales across scenarios.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="method">
+  <div class="wrap">
+    <div class="eyebrow">Method</div>
+    <h2>Deliberate offline, react online</h2>
+    <figure>
+      <div class="figure-card"><img src="static/images/paper/SCOREArchitecture006.jpg" alt="SCORE pipeline with the Deliberative Perception-Planning Stage and the Reactive Execution Stage"></div>
+      <figcaption>SCORE pipeline. DPS turns novel views into a time-stamped plan of action–reason pairs; RES validates each planned pose with a FastVLM shortly before it is displayed.</figcaption>
+    </figure>
+    <div class="grid2" style="margin-top:22px">
+      <div class="stage">
+        <h4>Deliberative Perception–Planning Stage <span class="pill">offline</span></h4>
+        <ul>
+          <li>Every <b>0.2 s</b> the agent's field of view is passed to the Perception Module; a view is <i>novel</i> when its SSIM to the last novel view drops below the threshold.</li>
+          <li>For a novel view, ray casting lists visible objects and agents; a <b>VLM</b> writes contextual descriptions into the Foundational Memory Module (max. 20 entries).</li>
+          <li>An <b>LLM</b> reasons over the five drivers and outputs an action (<code>Looking at &lt;entity&gt;</code> or <code>Search &lt;direction&gt;</code>), a reason, and a 10-point driver allocation.</li>
+          <li>The pair is stored with the <b>trajectory time stamp</b> at which it was decided. The head turns at 36°/s.</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <h4>Reactive Execution Stage <span class="pill">near-online</span></h4>
+        <ul>
+          <li>The agent replays the trajectory; each planned pose is executed when the agent's clock reaches its time stamp.</li>
+          <li><b>~2 s before</b> display, a <b>FastVLM</b> sees the live view, the entity list and the scheduled action, and answers <code>keep</code> or a context-appropriate replacement.</li>
+          <li>This rejects hallucinated actions and reacts to scene changes that were not present at planning time (e.g. a Santa suddenly crossing).</li>
+          <li>Latency: VLM 3.50 ± 0.64 s, LLM 7.10 ± 1.22 s, FastVLM 1.49 ± 0.41 s.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="replay">
+  <div class="wrap">
+    <div class="eyebrow">Interactive replay</div>
+    <h2>Compare SCORE, Human, and Track in the study scenes</h2>
+    <p>Pick one of the ten user-study scenarios and replay pre-computed head trajectories. Nothing is generated live: SCORE runs, VR participants, and the saliency baseline <i>Track</i> are recorded data. Trajectories are aligned by progress along the path (participants walked at their own pace).</p>
+
+    <div class="replay">
+      <div>
+        <div class="viewer">
+          <div class="viewer-tabs" role="tablist">
+            <button class="tab on" data-view="topdown" role="tab">Top-down (2D)</button>
+            <button class="tab" data-view="unity" role="tab">3D scene (WebGL)</button>
+            <span class="spacer" style="flex:1"></span>
+            <div class="seg" id="cam-seg" hidden>
+              <button data-cam="follow" class="on">Follow</button>
+              <button data-cam="fov">Agent view</button>
+              <button data-cam="top">Overhead</button>
+            </div>
+          </div>
+          <canvas id="topdown" aria-label="Top-down view of agent paths and gaze directions"></canvas>
+          <div id="unity-wrap" hidden>
+            <canvas id="unity-canvas" tabindex="-1"></canvas>
+            <div class="unity-overlay" id="unity-overlay">
+              <b>3D replay in the original Unity scenes</b>
+              <p>Loads a WebGL build of the study environments (large download; desktop browser recommended). Drag to orbit, scroll to zoom.</p>
+              <button class="btn" id="unity-load">Load 3D scenes</button>
+              <div class="progress" hidden><i></i></div>
+            </div>
+          </div>
+          <div class="transport">
+            <button class="icon-btn" id="play" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></button>
+            <input type="range" id="scrub" min="0" max="1000" value="0" aria-label="Replay progress">
+            <span class="muted" id="time-label" style="min-width:86px;text-align:right">0.0 s</span>
+          </div>
+          <div class="chart">
+            <div class="muted" style="margin-bottom:4px">Head yaw relative to walking direction (°): left &lt; 0 &lt; right</div>
+            <canvas id="yaw-chart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <div class="box">
+          <label class="h">Environment</label>
+          <div class="seg" id="env-seg"></div>
+          <label class="h" style="margin-top:12px">Condition</label>
+          <div class="seg" id="cond-seg">
+            <button data-cond="MDC" class="on">MDC</button>
+            <button data-cond="APC">APC</button>
+          </div>
+          <p class="goal" style="margin:12px 0 0"><b>Goal:</b> <span id="goal"></span></p>
+        </div>
+        <div class="box">
+          <label class="h">Trajectories</label>
+          <div id="methods"></div>
+          <p class="muted" style="margin:8px 0 0">The gaze line shows head orientation. In 3D, the first visible method drives the camera.</p>
+        </div>
+        <div class="box">
+          <label class="h">Paper DTW ↓ (this scenario)</label>
+          <table class="dtw-mini" id="dtw-mini"></table>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="headrot">
+  <div class="wrap">
+    <div class="eyebrow">Head-rotation trajectories</div>
+    <h2>The shape of looking around</h2>
+    <p>Each trace follows the tip of the head's forward vector over a whole trial (light → dark = start → end). Humans sweep wide arcs toward the path, seats, or traffic, then return. SCORE produces the same kind of purposeful excursions. Track barely leaves a small saliency-driven region, and its traces look alike regardless of the scene.</p>
+    <div class="viewer-tabs" id="hr-env" style="border:1px solid var(--line);border-radius:var(--radius) var(--radius) 0 0;border-bottom:0"></div>
+    <figure>
+      <div class="figure-card" style="border-radius:0 0 var(--radius) var(--radius)"><img id="hr-img" src="static/images/supp/headrot_bus.jpg" alt="Head-direction trajectories of Human, SCORE and Track for two examples under APC and MDC"></div>
+      <figcaption id="hr-cap"></figcaption>
+    </figure>
+    <h3>Rotate it yourself</h3>
+    <p class="muted">The same representation computed from the replay data above. Drag to orbit (all three views move together); pick the condition and trial.</p>
+    <div class="seg" style="margin:10px 0 12px;align-items:center;gap:10px">
+      <div class="seg" id="hr-cond"><button data-cond="MDC" class="on">MDC</button><button data-cond="APC">APC</button></div>
+      <span class="muted">Trial</span><div class="seg" id="hr-trial"><button data-t="0" class="on">1</button><button data-t="1">2</button><button data-t="2">3</button></div>
+      <button class="tab" id="hr-reset" style="border:1px solid var(--line)">Reset view</button>
+    </div>
+    <div class="grid3" id="hr-spheres"></div>
+  </div>
+</section>
+
+<section id="outputs">
+  <div class="wrap">
+    <div class="eyebrow">Model outputs</div>
+    <h2>What SCORE says while it looks around</h2>
+    <p>Action–reason pairs logged from SCORE runs (Gemini). Single-agent traces show the DPS plan; multi-agent traces also show what RES did with each planned action: <code>keep</code>, or an override from the live view. Entity names are the scene object names the agent is allowed to reference.</p>
+    <div class="examples">
+      <div class="ex-list" id="ex-list"></div>
+      <div>
+        <div class="muted" id="ex-meta" style="margin-bottom:8px"></div>
+        <div class="trace" id="ex-trace"></div>
+      </div>
+    </div>
+    <h3>Removing a driver changes the reasoning</h3>
+    <div class="grid2">
+      <figure>
+        <div class="figure-card"><img src="static/images/paper/BusExample.jpg" alt="Bus scene: with the Interest driver the agent looks at Santa; without it the agent ignores him"></div>
+        <figcaption>Without <i>Interest</i>, the agent no longer looks at the Santa on the bus.</figcaption>
+      </figure>
+      <figure>
+        <div class="figure-card"><img src="static/images/paper/FigureOnly1_2.jpg" alt="Reasoning and action when Information-seeking, Habit, Safety and Social schema are excluded"></div>
+        <figcaption>Reasoning and action when <i>Information seeking</i>, <i>Habit</i>, <i>Safety</i> or <i>Social schema</i> is removed.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="ollama">
+  <div class="wrap">
+    <div class="eyebrow">Run locally</div>
+    <h2>Try the SCORE reasoning step with Qwen on your own machine</h2>
+    <p>This page cannot run the full simulation, but it can send the exact SCORE prompts to an <a href="https://ollama.com" target="_blank" rel="noopener">Ollama</a> server running on <b>your</b> computer. Your browser talks to <code>localhost</code> directly; nothing is sent to us. The <a href="https://github.com/JuyeongHwang/SIGGRAPHAsia2025OfficialCode_SCORE" target="_blank" rel="noopener">released Unity code</a> has the same switch (<code>provider = Ollama</code> or <code>SCORE_PROVIDER=ollama</code>).</p>
+    <details open>
+      <summary>Setup (once)</summary>
+      <p style="margin-top:10px">1. Install Ollama and pull a vision-language model (≈ 6 GB):</p>
+      <pre><code>ollama pull qwen3-vl:8b</code></pre>
+      <p style="margin-top:10px">2. Allow this page to call your local server, then start it. macOS / Linux:</p>
+      <pre><code id="origins-sh">OLLAMA_ORIGINS="https://juyeonghwang.github.io" ollama serve</code></pre>
+      <p style="margin-top:10px">Windows (PowerShell; quit the Ollama tray app first):</p>
+      <pre><code id="origins-ps">$env:OLLAMA_ORIGINS="https://juyeonghwang.github.io"; ollama serve</code></pre>
+      <p class="muted" style="margin-top:10px">Works in Chrome, Edge and Firefox. Chrome may ask for permission to access devices on your local network; allow it. Safari blocks requests from https pages to localhost.</p>
+    </details>
+
+    <div class="demo">
+      <div class="box">
+        <div class="field">
+          <span>Server</span>
+          <div style="display:flex;gap:8px"><input type="text" id="ol-url" value="http://localhost:11434"><button class="btn ghost" id="ol-check" style="flex:none">Connect</button></div>
+        </div>
+        <div class="field"><span>Model</span><select id="ol-model"><option>qwen3-vl:8b</option></select></div>
+        <div class="field"><span>Field of view (agent camera)</span><div class="fov-pick" id="fov-pick"></div></div>
+        <div class="field"><span>Scenario goal</span><input type="text" id="ol-goal"></div>
+        <div class="field"><span>Visible entities (illustrative list; in the simulator this comes from ray casting)</span><textarea id="ol-objects"></textarea></div>
+        <div class="field"><span>Current memory (FMM)</span><textarea id="ol-memory" placeholder="(empty at the first decision)"></textarea></div>
+        <div class="field"><span>Head offset from body (pitch, yaw °)</span><input type="text" id="ol-pose" value="0, 0"></div>
+        <button class="btn" id="ol-run">Run VLM → LLM</button>
+        <div class="status" id="ol-status">Not connected.</div>
+      </div>
+      <div class="box">
+        <label class="h" style="font-size:0.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)">Output</label>
+        <div id="ol-out"><p class="muted">Run the demo to see the perception memory, the driver allocation, the explanation and the chosen head action.</p></div>
+        <details style="margin-top:16px"><summary>Show prompts</summary><pre id="ol-prompts" style="white-space:pre-wrap;margin-top:10px;max-height:340px"></pre></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="eyebrow">Results</div>
+    <h2>Closer to human head motion than saliency</h2>
+    <p>Normalized DTW between generated and human head-orientation quaternion sequences (lower is better; ± 95% CI). <i>IntraHuman</i> compares two random halves of the participants and is an empirical lower bound.</p>
+    <div class="table-wrap"><table class="res" id="tab-single"></table></div>
+    <div class="grid2" style="margin-top:22px">
+      <div>
+        <h3 style="margin-top:0">Multi-agent (UCY crowds)</h3>
+        <div class="table-wrap"><table class="res" id="tab-multi"></table></div>
+        <figure style="margin-top:14px">
+          <div class="figure-card"><img src="static/images/paper/MultiExample5.jpg" alt="Multi-agent example comparing Human, SCORE and Track on Zara scenes"></div>
+          <figcaption>SCORE agents look along the intended path like the ground truth; Track fixates on storefronts.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h3 style="margin-top:0">Responsiveness to unseen distractors</h3>
+        <p class="muted">DPS / RES conditions. RES alone (MDC-APC) already improves over never seeing the distractors (MDC-MDC).</p>
+        <div class="table-wrap"><table class="res" id="tab-resp"></table></div>
+        <h3>Where do they look?</h3>
+        <figure>
+          <div class="figure-card"><img src="static/images/paper/CrossingMDCAPC_CategoryAnalysis.jpg" alt="Proportional entity category selections of humans and SCORE in the crossing scene"></div>
+          <figcaption>Entity categories chosen by humans and SCORE in the crossing scene (MDC and APC).</figcaption>
+        </figure>
+      </div>
+    </div>
+    <details>
+      <summary>Ablation study (single-agent)</summary>
+      <div class="table-wrap" style="margin-top:12px"><table class="res" id="tab-ablation"></table></div>
+    </details>
+  </div>
+</section>
+
+<section id="bibtex" class="bib">
+  <div class="wrap">
+    <div class="eyebrow">Citation</div>
+    <h2>BibTeX</h2>
+    <pre><code>@inproceedings{hwang2025score,
+  title     = {How Does a Virtual Agent Decide Where to Look? Symbolic Cognitive Reasoning for Embodied Head Rotation},
+  author    = {Hwang, Juyeong and Hong, Seong-Eun and Seon, JaeYoung and Kang, HyeongYeop},
+  booktitle = {SIGGRAPH Asia 2025 Conference Papers},
+  year      = {2025}
+}</code></pre>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Supported by the National Research Foundation of Korea (RS-2025-00518643) and IITP grants funded by the Korea government (MSIT) (IITP-2025-RS-2020-II201819, RS-2025-02653113).
+  </div>
+</footer>
+
+<script src="static/js/results.js?v=4"></script>
+<script src="static/js/replay.js?v=4"></script>
+<script src="static/js/headrot.js?v=4"></script>
+<script src="static/js/examples.js?v=4"></script>
+<script src="static/js/ollama-demo.js?v=4"></script>
+<script>
+  (function () {
+    var btn = document.getElementById('theme-btn');
+    var root = document.documentElement;
+    try { var saved = localStorage.getItem('score-theme'); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') === 'dark' ||
+        (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+      var next = dark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('score-theme', next); } catch (e) {}
+      window.dispatchEvent(new Event('themechange'));
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+[
+ {
+  "scene": "BusNormal",
+  "env": "Bus",
+  "cond": "MDC",
+  "counts": {
+   "SCORE": 5,
+   "Human": 15,
+   "Track": 5
+  }
+ },
+ {
+  "scene": "BusAbnormal",
+  "env": "Bus",
+  "cond": "APC",
+  "counts": {
+   "SCORE": 5,
+   "Human": 15,
+   "Track": 5
+  }
+ },
+ {
+  "scene": "CafeNormal",
+  "env": "Cafe",
+  "cond": "MDC",
+  "counts": {
+   "SCORE": 5,
+   "Human": 15,
+   "Track": 5
+  }
+ },
+ {
+  "scene": "CafeAbnormal",
+  "env": "Cafe",
+  "cond": "APC",
+  "counts": {
+   "SCORE": 3,
+   "Human": 15,
+   "Track": 5
+  }
+ },
+ {
+  "scene": "CrossingNormal",
+  "env": "Crossing",
+  "cond": "MDC",
+  "counts": {
+   "SCORE": 5,
+   "Human": 15,
+   "Track": 5
+  }
+ },
+ {
+  "scene": "CrossingAbnormal",
+  "env": "Crossing",
+  "cond": "APC",
+  "counts": {
+   "SCORE": 5,
+   "Human": 14,
+   "Track": 5
+  }
+ },
+ {
+  "scene": "MallNormal",
+  "env": "Mall",
+  "cond": "MDC",
+  "counts": {
+   "SCORE": 6,
+   "Human": 15,
+   "Track": 5
+  }
+ },
+ {
+  "scene": "MallAbnormal",
+  "env": "Mall",
+  "cond": "APC",
+  "counts": {
+   "SCORE": 6,
+   "Human": 15,
+   "Track": 5
+  }
+ },
+ {
+  "scene": "StreetNormal",
+  "env": "Street",
+  "cond": "MDC",
+  "counts": {
+   "SCORE": 5,
+   "Human": 15,
+   "Track": 4
+  }
+ },
+ {
+  "scene": "StreetAbnormal",
+  "env": "Street",
+  "cond": "APC",
+  "counts": {
+   "SCORE": 5,
+   "Human": 15,
+   "Track": 5
+  }
+ }
+]
