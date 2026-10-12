@@ -11,7 +11,7 @@
   <link rel="icon" href="static/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/score.css?v=5">
+  <link rel="stylesheet" href="static/css/score.css?v=6">
 </head>
 <body>
 
@@ -273,8 +273,10 @@
       <pre><code>ollama pull qwen3-vl:8b</code></pre>
       <p style="margin-top:10px">2. Allow this page to call your local server, then start it. macOS / Linux:</p>
       <pre><code id="origins-sh">OLLAMA_ORIGINS="https://juyeonghwang.github.io" ollama serve</code></pre>
-      <p style="margin-top:10px">Windows (PowerShell; quit the Ollama tray app first):</p>
-      <pre><code id="origins-ps">$env:OLLAMA_ORIGINS="https://juyeonghwang.github.io"; ollama serve</code></pre>
+      <p style="margin-top:10px">Windows (PowerShell). The Ollama tray app already runs a server on port 11434, so set the variable and restart the app instead of running <code>ollama serve</code>:</p>
+      <pre><code id="origins-ps">[Environment]::SetEnvironmentVariable("OLLAMA_ORIGINS", "https://juyeonghwang.github.io", "User")
+Stop-Process -Name "ollama app","ollama" -Force; Start-Process "$env:LOCALAPPDATA\Programs\Ollama\ollama app.exe"</code></pre>
+      <p class="muted" style="margin-top:6px">If you see <code>bind: Only one usage of each socket address</code>, a server is already running: restart it with the variable set as above.</p>
       <p class="muted" style="margin-top:10px">Works in Chrome, Edge and Firefox. Chrome may ask for permission to access devices on your local network; allow it. Safari blocks requests from https pages to localhost.</p>
     </details>
 
@@ -356,11 +358,11 @@
   </div>
 </footer>
 
-<script src="static/js/results.js?v=5"></script>
-<script src="static/js/replay.js?v=5"></script>
-<script src="static/js/headrot.js?v=5"></script>
-<script src="static/js/examples.js?v=5"></script>
-<script src="static/js/ollama-demo.js?v=5"></script>
+<script src="static/js/results.js?v=6"></script>
+<script src="static/js/replay.js?v=6"></script>
+<script src="static/js/headrot.js?v=6"></script>
+<script src="static/js/examples.js?v=6"></script>
+<script src="static/js/ollama-demo.js?v=6"></script>
 <script>
   (function () {
     var btn = document.getElementById('theme-btn');

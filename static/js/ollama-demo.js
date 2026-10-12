@@ -160,7 +160,8 @@
   // init
   var origin = location.origin.indexOf('http') === 0 ? location.origin : 'https://juyeonghwang.github.io';
   $('origins-sh').textContent = 'OLLAMA_ORIGINS="' + origin + '" ollama serve';
-  $('origins-ps').textContent = '$env:OLLAMA_ORIGINS="' + origin + '"; ollama serve';
+  $('origins-ps').textContent = '[Environment]::SetEnvironmentVariable("OLLAMA_ORIGINS", "' + origin + '", "User")\n' +
+    'Stop-Process -Name "ollama app","ollama" -Force; Start-Process "$env:LOCALAPPDATA\\Programs\\Ollama\\ollama app.exe"';
   $('fov-pick').innerHTML = SAMPLES.map(function (s, i) {
     return '<img src="static/images/fov/' + s.img + '.jpg" alt="Agent view sample ' + (i + 1) + '" data-i="' + i + '">';
   }).join('');
