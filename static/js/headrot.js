@@ -23,8 +23,7 @@
   function showFigure() {
     var e = ENVS.filter(function (x) { return x[0] === st.env; })[0];
     $('hr-img').src = 'static/images/supp/headrot_' + e[1] + '.jpg';
-    $('hr-cap').innerHTML = 'Supplementary Fig. ' + e[2] + ': head-rotation examples in the ' + LABEL[e[0]] +
-      ' scenario (APC left, MDC right; two examples each) for Human, SCORE (ours) and Track.';
+    $('hr-cap').innerHTML = LABEL[e[0]] + ' · APC (left), MDC (right)';
   }
   function seg(id, key, parse) {
     $(id).addEventListener('click', function (ev) {

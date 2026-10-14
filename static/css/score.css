@@ -101,7 +101,7 @@ figure { margin: 0; }
 /* drivers */
 .drivers { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 18px 0 8px; }
 .driver { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; background: var(--card); border-top: 4px solid var(--c); }
-.driver h4 { font-size: 0.98rem; margin: 0 0 6px; }
+.driver h4 { font-size: 0.98rem; margin: 0; text-align: center; }
 .driver p { font-size: 0.85rem; margin: 0; line-height: 1.45; }
 
 /* pipeline */

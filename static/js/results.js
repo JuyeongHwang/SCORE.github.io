@@ -32,6 +32,8 @@ window.SCORE_DTW = {
 
 (function () {
   var D = window.SCORE_DTW;
+  // The full tables are optional on the page; the replay panel only needs SCORE_DTW.
+  function put(id, html) { var el = document.getElementById(id); if (el) el.innerHTML = html; }
   var ENV_LABEL = { Bus: 'Bus', Cafe: 'Café', Crossing: 'Crossing', Mall: 'Mall', Street: 'Street' };
   function cell(v, best, cls) {
     return '<td class="' + (best ? 'best ' : '') + (cls || '') + '">' + v[0].toFixed(4) +
@@ -52,14 +54,14 @@ window.SCORE_DTW = {
       h += '</tr>';
     });
   });
-  document.getElementById('tab-single').innerHTML = h;
+  put('tab-single', h);
 
   // Table 2
   h = '<tr><th>Scene</th><th>Track</th><th>SCORE (ours)</th></tr>';
   Object.keys(D.multi).forEach(function (s) {
     h += '<tr><td class="l">' + s + '</td>' + cell(D.multi[s].Track, false) + cell(D.multi[s].SCORE, true) + '</tr>';
   });
-  document.getElementById('tab-multi').innerHTML = h;
+  put('tab-multi', h);
 
   // Table 3
   h = '<tr><th>Scenario</th><th>MDC-MDC</th><th>MDC-APC</th><th>APC-APC</th></tr>';
@@ -67,7 +69,7 @@ window.SCORE_DTW = {
     var r = D.responsiveness[env];
     h += '<tr><td class="l">' + ENV_LABEL[env] + '</td>' + cell(r[0]) + cell(r[1]) + cell(r[2], true) + '</tr>';
   });
-  document.getElementById('tab-resp').innerHTML = h;
+  put('tab-resp', h);
 
   // Table 4 (means only)
   var A = D.ablation, envs = ['Bus', 'Cafe', 'Crossing', 'Mall', 'Street'];
@@ -84,5 +86,5 @@ window.SCORE_DTW = {
     });
     h += '</tr>';
   });
-  document.getElementById('tab-ablation').innerHTML = h;
+  put('tab-ablation', h);
 })();
